@@ -13,8 +13,8 @@ This is the first project for the November 2018 - February 2019 George Washingto
 [ ] Local Storage  
 [ ] Plan Presentation  
 
-### development log
+## Development Log
 
 #### Thursday, December 13th, 2018
 
-We recieved the assignment for project 1. We were assigned groups. Our group is Ian, Nina, and Minoj. The initial repo is set up on Ian's github account. 
+We recieved the assignment for project 1. We were assigned groups. Our group is Ian, Nina, and Minoj. The initial repo is set up.
