@@ -1,18 +1,20 @@
-# project1
+# Project 1
 
 This is the first project for the November 2018 - February 2019 George Washington University Full Time Web Development Course in Arlington. 
 
 ### what needs to be done
 
-[ ] Overall Plan
-[ ] Wireframe
-[ ] Get API requests working
-[ ] User interface
-[ ] Local Storage
-[ ] Plan Presentation
+[ ] Collaborate on Github  
+[ ] Overall Plan  
+[ ] CSS framework  
+[ ] Wireframe  
+[ ] Get API requests working  
+[ ] User interface  
+[ ] Local Storage  
+[ ] Plan Presentation  
 
 ### development log
 
 #### Thursday, December 13th, 2018
 
-We recieved the assignment for project 1. 
+We recieved the assignment for project 1. We were assigned groups. Our group is Ian, Nina, and Minoj. The initial repo is set up on Ian's github account. 
