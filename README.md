@@ -2,8 +2,11 @@
 
 This is the first project for the November 2018 - February 2019 George Washington University Full Time Web Development Course in Arlington. 
 
-### what needs to be done
+[The deployed website can be found here.](https://ianwalston.github.io/project1/)
 
+[The instructions for this project is here.](instuctions/project_instructions.pdf)
+
+### What needs to be done
 [ ] Collaborate on Github  
 [ ] Overall Plan  
 [ ] CSS framework  
