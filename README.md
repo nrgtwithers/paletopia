@@ -11,7 +11,7 @@ This is the first project for the November 2018 - February 2019 George Washingto
 [The instructions for this project is here.](project_instructions.pdf)
 
 ### What needs to be done
-[ ] Collaborate on Github  
+
 [ ] Overall Plan  
 [ ] Wireframe  
 [ ] CSS framework  

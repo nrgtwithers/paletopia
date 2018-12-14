@@ -69,6 +69,7 @@ h3 {
     text-transform: uppercase;
     font-size: 85%;
 }
+<<<<<<< HEAD
 .nav-item a:hover,
 .nav-item a:focus {
     border: 2px solid rgb(61, 146, 201);
@@ -175,4 +176,14 @@ h3 {
     .footer {
         text-align: center;
     }
+=======
+#sidebar{
+    background-color:#a4c9e2;
+    width:20%;
+    height: 100%;
+    float: left;
+}    
+#feed-top{
+    min-height:12em
+>>>>>>> c7c93231440c323a3ab1a4face427379ff89d94d
 }
