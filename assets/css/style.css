@@ -1,0 +1,50 @@
+/* everything */
+* {
+    box-sizing: border-box
+}
+
+/* html elements */
+body{
+    background:#e6ecf0;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+}
+h1{
+    color:white;
+    font-size:6em;
+}
+p{
+    line-height:1.6em
+}
+
+/* classes */
+.container{
+    padding:0.5em 16px;
+}
+.thick-container{
+    padding:2em 64px;
+}
+
+/* ids */
+#navbar{
+    width: 100%;
+    height: 100%;
+    background:#6ea5ca;
+    padding: 1em;
+    text-align: center;
+}
+#sidebar{
+    background-color:#a4c9e2;
+    width:20%;
+    height: 100%;
+    float: left;
+}
+
+#feed{
+    float:right;
+    width:80%;
+    background-color:white
+}
+#feed-top{
+    min-height:300px
+}
