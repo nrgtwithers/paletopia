@@ -27,3 +27,5 @@ We recieved the assignment for project 1. We were assigned groups. Our group is 
 
 
 #### Friday, December 14th, 2018
+
+![trilogy](https://image4.owler.com/logo/trilogy-education-services_owler_20170113_160521_large.jpg)
