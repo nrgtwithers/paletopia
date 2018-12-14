@@ -19,4 +19,4 @@ visionResponse.onload=function(){console.log(visionResponse.responseText)};
 visionResponse.open("POST","https://vision.googleapis.com/v1/images:annotate?key=AIzaSyA9EHeI2lrYJnjfEMhI0rU-J8yyfAOSOAs",!0);
 visionResponse.send(visionOption)
 
- }) 
+ })
