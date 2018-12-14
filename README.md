@@ -1,6 +1,6 @@
 # Project 1
 
-![gwu](https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjhqLWDg57fAhXQUt8KHTtFAyQQjRx6BAgBEAU&url=https%3A%2F%2Fcreativeservices.gwu.edu%2Fprimary-logo&psig=AOvVaw0EWV-ZcCMlJkrxBxd4O3wj&ust=1544832321480529)
+![gwu](https://creativeservices.gwu.edu/sites/g/files/zaxdzs1101/f/downloads/gw_txt_4cp_pos.png)
 
 This is the first project for the November 2018 - February 2019 George Washington University Full Time Web Development Course in Arlington. 
 
