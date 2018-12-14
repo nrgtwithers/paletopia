@@ -39,16 +39,16 @@
     <div id="layout" class="pure-g">
         <div class="sidebar pure-u-1 pure-u-md-1-4">
             <div class="header">
-                <h1 class="brand-title">A Sample Blog</h1>
-                <h2 class="brand-tagline">Creating a blog layout using Pure</h2>
+                <h1 class="brand-title">Image color Analysis</h1>
+                <h2 class="brand-tagline">generate color pallate from images</h2>
     
                 <nav class="nav">
                     <ul class="nav-list">
                         <li class="nav-item">
-                            <a class="pure-button" href="http://purecss.io">Pure</a>
+                            <a class="pure-button" >Button 1</a>
                         </li>
                         <li class="nav-item">
-                            <a class="pure-button" href="http://yuilibrary.com">YUI Library</a>
+                            <a class="pure-button" >Button 2</a>
                         </li>
                     </ul>
                 </nav>
@@ -62,6 +62,8 @@
                                 <img src="./assets/images/projectlogo1.png" width="800px">
                             </legend>
                             <span>
+                                <p>Enter the URL of an image</p>
+                                <p>Example: https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/08/Charlie-Day-Always-Sunny-GettyImages-459146160-1-920x584.jpg</p>
                             <input id="userInput" type="url" placeholder="Social Media URL">
                         </span>
                             <button id="submitButton" type="submit" class="pure-button pure-button-active">Search</button>
@@ -74,23 +76,8 @@
                     <h1 class="content-subhead">Pinned Post</h1>
     
                     
-                    <section class="post">
-                        <header class="post-header">
-                            <!-- <img width="48" height="48" alt="Tilo Mitra&#x27;s avatar" class="post-avatar" src="img/common/tilo-avatar.png"> -->
-    
-                            <h2 class="post-title">Caption Here</h2>
-    
-                            <p class="post-meta">
-                                By <a href="#" class="post-author">Tilo Mitra</a> under <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>
-                            </p>
-                        </header>
-    
-                        <div class="post-description">
-                            <p>
-                                Yesterday at CSSConf, we launched Pure – a new CSS library. Phew! Here are the <a href="https://speakerdeck.com/tilomitra/pure-bliss">slides from the presentation</a>. Although it looks pretty minimalist, we’ve been working on Pure for several months. After many iterations, we have released Pure as a set of small, responsive, CSS modules that you can use in every web project.
-                            </p>
-                        </div>
-                    </section>
+                    <p id="display">
+                    </p>
                 </div>
     
     
