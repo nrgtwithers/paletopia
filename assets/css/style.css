@@ -39,12 +39,11 @@ p{
     height: 100%;
     float: left;
 }
-
+#feed-top{
+    min-height:12em
+}
 #feed{
     float:right;
     width:80%;
     background-color:white
-}
-#feed-top{
-    min-height:12em
 }
