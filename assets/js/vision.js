@@ -10,9 +10,13 @@ const likelyhoodValue = {
 'LIKELY':1,
  'VERY_LIKELY':2 }
 
+ $("#submitButton").on("click", function(){
+
 var visionOption=JSON.stringify({"requests":[{  "image":{    "source":{"imageUri":"https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/08/Charlie-Day-Always-Sunny-GettyImages-459146160-1-920x584.jpg"}}  ,  "features": [{"type":features[5],"maxResults":5}]    } ]});
 var visionResponse=new XMLHttpRequest;
 
 visionResponse.onload=function(){console.log(visionResponse.responseText)};
 visionResponse.open("POST","https://vision.googleapis.com/v1/images:annotate?key=AIzaSyA9EHeI2lrYJnjfEMhI0rU-J8yyfAOSOAs",!0);
 visionResponse.send(visionOption)
+
+ }) 
