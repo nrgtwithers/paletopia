@@ -1,6 +1,6 @@
 # Project 1  
 
-### *Ian, Nina, and Minoj*  
+### *Ian, Nina, and Mel*  
 ![gwu](https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/b9/f9e0201e9511e6b63f73cb53440c56/GWSON_MOOC_profile.png?auto=format%2Ccompress&dpr=1&w=180&h=180)  
 ![trilogy](https://image4.owler.com/logo/trilogy-education-services_owler_20170113_160521_large.jpg)  
 
