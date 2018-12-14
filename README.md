@@ -12,14 +12,6 @@ This is the first project for the November 2018 - February 2019 George Washingto
 
 ### What needs to be done
 
-[ ] Overall Plan  
-[ ] Wireframe  
-[ ] CSS framework  
-[ ] Pick APIs
-[ ] Get API requests working  
-[ ] User interface  
-[ ] Local Storage  
-[ ] Plan Presentation  
 
 ## Development Log
 
@@ -29,3 +21,7 @@ We recieved the assignment for project 1. We were assigned groups. Our group is 
 
 
 #### Friday, December 14th, 2018
+
+We decided to make a web app where you put in an image and get out a color pallete and a css file using that color pallete. We designed a simple model for our first product that involved local storage. 
+
+4:02PM The program currently takes in a url as an input, makes the call to google vision, gets a response, parses rgb colors from the response and stores them into local storage. 
