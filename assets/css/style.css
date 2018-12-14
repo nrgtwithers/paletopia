@@ -22,7 +22,7 @@ p{
     padding:0.5em 16px;
 }
 .thick-container{
-    padding:2em 64px;
+    padding:64px 80px;
 }
 
 /* ids */
@@ -46,5 +46,5 @@ p{
     background-color:white
 }
 #feed-top{
-    min-height:300px
+    min-height:12em
 }
