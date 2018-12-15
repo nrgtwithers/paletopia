@@ -6,7 +6,7 @@
 
 This is the first project for the November 2018 - February 2019 George Washington University Full Time Web Development Course in Arlington. 
 
-[The deployed website can be found here.](https://ianwalston.github.io/project1/)
+[The deployed website can be found here.](https://ianwalston.github.io/ImageAnalysis/)
 
 [The instructions for this project is here.](project_instructions.pdf)
 
