@@ -1,82 +1,71 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
-        <title>GWU - Group Project</title>
-        
-            <!-- reset css-->
-        <link rel="stylesheet" href="assets/css/reset.css">
-        <!-- our css-->
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-        
-        <!--[if lte IE 8]>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+    <title>GWU - Group Project</title>
+
+    <!-- reset css-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- our css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
+        crossorigin="anonymous">
+
+    <!--[if lte IE 8]>
             <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
         <![endif]-->
-        <!--[if gt IE 8]><!-->
-            <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-        <!--<![endif]-->
-        
-        
-            <!--[if lte IE 8]>
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <!--<![endif]-->
+
+
+    <!--[if lte IE 8]>
                 <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
             <![endif]-->
-            <!--[if gt IE 8]><!-->
-                <!-- <link rel="stylesheet" href="./samp.css"> -->
-            <!--<![endif]-->
-    </head>
-    <body>
-    
-    
-    
-    
-    
-    
-    
+    <!--[if gt IE 8]><!-->
+    <!-- <link rel="stylesheet" href="./samp.css"> -->
+    <!--<![endif]-->
+</head>
+
+<body>
+
     <div id="layout" class="pure-g">
         <div class="sidebar pure-u-1 pure-u-md-1-4">
             <div class="header">
                 <h1 class="brand-title">Image color Analysis</h1>
                 <h2 class="brand-tagline">generate color pallate from images</h2>
-    
-
-
             </div>
         </div>
-    
+
         <div class="content pure-u-1 pure-u-md-3-5">
-                <form class="pure-form">
-                        <fieldset>
-                            <legend>
-                                <img src="./assets/images/projectlogo1.png" width="800px">
-                            </legend>
-                            <span>
-                                <p>Enter the URL of an image</p>
-                                <p>Example: https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/08/Charlie-Day-Always-Sunny-GettyImages-459146160-1-920x584.jpg</p>
-                            <input id="userInput" type="url" placeholder="Social Media URL">
-                        </span>
-                            <button id="submitButton" type="submit" class="pure-button pure-button-active">Search</button>
-                        </fieldset>
-                    </form>
-    
+            <form class="pure-form">
+                <fieldset>
+                    <legend>
+                        <img src="./assets/images/projectlogo1.png" width="800px">
+                    </legend>
+                    <span>
+                        <p>Enter the URL of an image</p>
+                        <p>Example:
+                            https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/08/Charlie-Day-Always-Sunny-GettyImages-459146160-1-920x584.jpg</p>
+                        <input id="userInput" type="url" placeholder="Social Media URL">
+                    </span>
+                    <button id="submitButton" type="submit" class="pure-button pure-button-active">Search</button>
+                </fieldset>
+            </form>
+
             <div>
                 <!-- A wrapper for all content -->
                 <div class="posts">
                     <h1 class="content-subhead">Pinned Post</h1>
-    
-                    
                     <div id="display">
                     </div>
                 </div>
-    
-    
                 <div class="footer">
                     <div class="pure-menu pure-menu-horizontal">
                         <h4>Copyright &copy; 2018</h4>
-                    
                     </div>
                 </div>
             </div>
