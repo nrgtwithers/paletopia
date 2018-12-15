@@ -8,9 +8,6 @@ const likelyhoodValue = {
     'VERY_LIKELY': 2
 }
 
-
-
-
 //defining function to call google Vision, get image properties, store colors in local memory and display colors in html div with id #display
 var googleVisionImageProperties = (url) => {
 
