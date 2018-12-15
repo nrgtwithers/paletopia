@@ -12,7 +12,9 @@ a:hover,
 a:focus {
     text-decoration: underline;
 }
-
+h1{
+    font-size: 10em
+}
 h3 {
     font-weight: 100;
 }
@@ -69,7 +71,6 @@ h3 {
     text-transform: uppercase;
     font-size: 85%;
 }
-<<<<<<< HEAD
 .nav-item a:hover,
 .nav-item a:focus {
     border: 2px solid rgb(61, 146, 201);
@@ -176,7 +177,6 @@ h3 {
     .footer {
         text-align: center;
     }
-=======
 #sidebar{
     background-color:#a4c9e2;
     width:20%;
@@ -185,5 +185,5 @@ h3 {
 }    
 #feed-top{
     min-height:12em
->>>>>>> c7c93231440c323a3ab1a4face427379ff89d94d
+}
 }

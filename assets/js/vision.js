@@ -8,46 +8,41 @@ const likelyhoodValue = {
     'VERY_LIKELY': 2
 }
 
-//defining function to call google Vision, get image properties, store colors in local memory and display colors in html
+
+
+
+//defining function to call google Vision, get image properties, store colors in local memory and display colors in html div with id #display
 var googleVisionImageProperties = (url) => {
 
-    //api request to google vision
+    //api request to google vision. This returns the response as visionResponse
     var visionOption = JSON.stringify({ "requests": [{ "image": { "source": { "imageUri": url } }, "features": [{ "type": 'IMAGE_PROPERTIES', "maxResults": 5 }] }] });
     var visionResponse = new XMLHttpRequest;
     visionResponse.open("POST", "https://vision.googleapis.com/v1/images:annotate?key=AIzaSyA9EHeI2lrYJnjfEMhI0rU-J8yyfAOSOAs", !0);
     visionResponse.send(visionOption)
 
-    //doing stuff with the request
+    //doing stuff with the response once the response is loaded
     visionResponse.onload = function () {
 
-        //storing colors from vision Response into array.
+        //putting colors from visionResponse into an array colorsArray
         colorsArray = JSON.parse(visionResponse.response).responses[0].imagePropertiesAnnotation.dominantColors.colors
 
+        //storing colorsArray in local storage
         localStorage.setItem("newColorsArray", JSON.stringify(colorsArray))
 
-        //iterating over array of colors
+        $("#display").empty()
+
+        //iterating over array of colors colorsArray
         for (i = 0; i < colorsArray.length; i++) {
             let color = colorsArray[i].color
 
-            //reformat color from googleVision response to css 
+            //reformat each color to css format -- rgb(12,50,39) 
             let rgbColor = `rgb(${color.red},${color.green},${color.blue})`
 
             //displaying css formatted color in the DOM
-            $("#display").append($("<div>").text(rgbColor).css(`background-color`,rgbColor).css('min-height','100px'))
+            $("#display").append($("<div>").text(rgbColor).css(`background-color`, rgbColor).css('min-height', '100px'))
 
             //storing each color from the array into local storage
             localStorage.setItem(`newColor${i}`, rgbColor)
         }
     }
 }
-
-//making the submit button call the googleVisionCall with the url from the userInput form, and display image
-$("#submitButton").on("click", function () {
-    event.preventDefault()
-    var userInput = $("#userInput").val()
-    //appending request image to display div
-    var img = $("<img>").attr("src", userInput)
-    $("#display").append(img)
-    
-    googleVisionImageProperties(userInput)
-})

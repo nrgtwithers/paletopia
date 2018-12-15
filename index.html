@@ -8,7 +8,7 @@
     <title>GWU - Group Project</title>
 
     <!-- reset css-->
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
     <!-- our css-->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
@@ -50,9 +50,9 @@
                         <p>Enter the URL of an image</p>
                         <p>Example:
                             https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/08/Charlie-Day-Always-Sunny-GettyImages-459146160-1-920x584.jpg</p>
-                        <input id="userInput" type="url" placeholder="Social Media URL">
+                        <input id="userInput" type="url" placeholder="Image URL">
                     </span>
-                    <button id="submitButton" type="submit" class="pure-button pure-button-active">Search</button>
+                    <button id="submitButton" type="submit" class="pure-button pure-button-active">Submit</button>
                 </fieldset>
             </form>
 
@@ -60,8 +60,8 @@
                 <!-- A wrapper for all content -->
                 <div class="posts">
                     <h1 class="content-subhead">Pinned Post</h1>
-                    <div id="display">
-                    </div>
+                    <div id="current-image"></div>
+                    <div id="display"></div>
                 </div>
                 <div class="footer">
                     <div class="pure-menu pure-menu-horizontal">
@@ -75,6 +75,7 @@
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- our js -->
+    <script src="assets/js/mainbutton.js"></script>
     <script src="assets/js/vision.js"></script>
 </body>
 
