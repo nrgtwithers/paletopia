@@ -13,3 +13,4 @@ $("#submitButton").on("click", function () {
     //call function that will analize colors, store colors in local storage, and display colors in #display
     googleVisionImageProperties(userInput)
 })
+
