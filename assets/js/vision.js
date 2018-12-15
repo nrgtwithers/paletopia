@@ -27,6 +27,8 @@ var googleVisionCall = (url) => {
         //storing colors from vision Response into array.
         colorsArray = JSON.parse(visionResponse.response).responses[0].imagePropertiesAnnotation.dominantColors.colors
 
+        localStorage.setItem("newColorsArray", JSON.stringify(colorsArray))
+
         //iterating over array of colors
         for (i = 0; i < colorsArray.length; i++) {
             let color = colorsArray[i].color    
