@@ -29,6 +29,7 @@ var googleVisionImageProperties = (url) => {
         //storing colorsArray in local storage
         localStorage.setItem("newColorsArray", JSON.stringify(colorsArray))
 
+        //empty display used to show colors
         $("#display").empty()
 
         //iterating over array of colors colorsArray
