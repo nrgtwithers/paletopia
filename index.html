@@ -22,12 +22,12 @@
     <!--<![endif]-->
 
 
-    <!--[if lte IE 8]>
+    <!-- [if lte IE 8]>
                 <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
             <![endif]-->
     <!--[if gt IE 8]><!-->
     <!-- <link rel="stylesheet" href="./samp.css"> -->
-    <!--<![endif]-->
+    <!-- <![endif] -->
 </head>
 
 <body>
@@ -47,12 +47,18 @@
                         <img src="./assets/images/projectlogo1.png" width="800px">
                     </legend>
                     <span>
-                        <p>Enter the URL of an image</p>
-                        <p>Example:
+                        <p>Paste the URL of an image into the form</p>
+                        <span>
+                            <input id="userInput" type="url" placeholder="Image URL">
+                        </span>
+                        <span>
+                            <button id="submitButton" type="submit" class="pure-button pure-button-active">Submit</button>
+                        </span>
+                        <p>Example image URLs:</p>
+                        <p>http://www.accudata.com/smartdata/wp-content/uploads/2013/10/img-7-1.jpg</p>
+                        <p>
                             https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12225358/Pug-On-White-01.jpg</p>
-                        <input id="userInput" type="url" placeholder="Image URL">
                     </span>
-                    <button id="submitButton" type="submit" class="pure-button pure-button-active">Submit</button>
                 </fieldset>
             </form>
 
