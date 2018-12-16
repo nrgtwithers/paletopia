@@ -205,6 +205,8 @@ html, body {
 
 .footer {
     padding: 1em 0;
+    text-align: center;
+    color: darkgrey;
 }
 .footer a {
     color: #ccc;
@@ -234,7 +236,9 @@ html, body {
 
     .footer {
         text-align: center;
+        color: darkgrey;
     }
+
 #sidebar{
     background-color:#a4c9e2;
     width:20%;
