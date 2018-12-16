@@ -9,8 +9,6 @@ const likelyhoodValue = {
     'VERY_LIKELY': 2
 }
 
-
-
 //defining function to call google Vision, get image properties, store colors in local memory and display colors in html div with id #display
 var googleVisionImageProperties = (url) => {
 
@@ -32,6 +30,7 @@ var googleVisionImageProperties = (url) => {
         //empty display used to show colors
         $("#display").empty()
 
+        $("#display").append($("<h1>").text("Current Color Pallete"))
         //iterating over array of colors colorsArray
         for (i = 0; i < colorsArray.length; i++) {
             let color = colorsArray[i].color
@@ -40,13 +39,15 @@ var googleVisionImageProperties = (url) => {
             let rgbColor = `rgb(${color.red},${color.green},${color.blue})`
 
             //displaying css formatted color in the DOM
-            $("#display").append($("<div>").text(rgbColor).css(`background-color`, rgbColor).css('min-height', '100px'))
+            $("#display").append($("<div>").text(rgbColor).css(`background-color`, rgbColor).css('min-height', '75px'))
 
             //storing each color from the array into local storage
             localStorage.setItem(`newColor${i}`, rgbColor)
         }
     }
+
     $(document).ready(function () {
+        //pulling rgb colors from current color pallete
         var sideBar = localStorage.getItem('newColor0');
         var sideBarHeader = localStorage.getItem('newColor3');
         var sideBarTag = localStorage.getItem('newColor4')
@@ -54,7 +55,8 @@ var googleVisionImageProperties = (url) => {
         var footer = localStorage.getItem('newColor8')
         var button = localStorage.getItem('newColor2')
         var buttonText = localStorage.getItem('newColor9')
-    
+
+        //setting css color properties to colors from the current color pallete 
         $('.sidebar').css('background-color', sideBar);
         $('.sidebar').css('color', sideBarHeader);
         $('.brand-tagline').css('color', sideBarTag);
@@ -62,11 +64,8 @@ var googleVisionImageProperties = (url) => {
         $('.footer').css('color', footer);
         $('#submitButton').css('background-color', button);
         $('#submitButton').css('color', buttonText);
-        $( "html" ).animate({
-            backgroundColor: sideBar
-        }, 2000).delay(1000).animate({
-            backgroundColor: '#FFF'
-        },3000);
-        
+
+        //animating background colors
+        $("html").animate({ backgroundColor: sideBar }, 2000).delay(1000).animate({ backgroundColor: '#FFF' }, 3000);
     })
 }
