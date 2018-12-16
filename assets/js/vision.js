@@ -43,4 +43,27 @@ var googleVisionImageProperties = (url) => {
             localStorage.setItem(`newColor${i}`, rgbColor)
         }
     }
+    setStyles();
 }
+
+function setStyles() {
+    var sideBar = localStorage.getItem('newColor0');
+    var sideBarHeader = localStorage.getItem('newColor3');
+    var sideBarTag = localStorage.getItem('newColor4')
+    var header = localStorage.getItem('newColor6')
+
+    console.log(sideBar);
+    $('.sidebar').css('background-color', sideBar);
+    $('.sidebar').css('color', sideBarHeader);
+    $('.brand-tagline').css('color', sideBarTag);
+    $('.typewriter h1').css('color', header);
+ 
+    $.keyframe.define([{
+        name: 'pulse',
+           '0%':   {backgroundColor: sideBar},
+           '100%': {backgroundColor: "#FFFFFF"}
+    }]);
+    $('#body').playKeyframe({name:"pulse"})
+  }
+
+  

@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
         crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100" rel="stylesheet">    
     <!--[if lte IE 8]>
             <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
         <![endif]-->
@@ -30,13 +31,13 @@
     <!-- <![endif] -->
 </head>
 
-<body>
-
+<body id="body">
+    <div class="element">
     <div id="layout" class="pure-g">
         <div class="sidebar pure-u-1 pure-u-md-1-4">
             <div class="header">
-                <h1 class="brand-title">Image color Analysis</h1>
-                <h2 class="brand-tagline">generate color pallate from images</h2>
+                <h1 class="brand-title">IMAGE COLOR ANALYSIS</h1>
+                <h2 class="brand-tagline">generate color pallette from images</h2>
             </div>
         </div>
 
@@ -44,7 +45,9 @@
             <form class="pure-form">
                 <fieldset>
                     <legend>
-                        <img src="./assets/images/projectlogo1.png" width="800px">
+                        <div class="typewriter">
+                         <h1>IMAGE COLOR ANALYSIS</h1>
+                        </div>
                     </legend>
                     <span>
                         <span>
@@ -61,7 +64,7 @@
             <div>
                 <!-- A wrapper for all content -->
                 <div class="posts">
-                    <h1 class="content-subhead">Pinned Post</h1>
+                    <h1 class="content-subhead">Color Pallette</h1>
                     <div id="current-image"></div>
                     <div id="display"></div>
                 </div>
@@ -73,13 +76,15 @@
             </div>
         </div>
     </div>
-
+</div>
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquerykeyframes/0.0.9/jquery.keyframes.min.js"></script>
     <!-- our js -->
     <script src="assets/js/vision.js"></script>
     <script src="assets/js/mainbutton.js"></script>
     <script src="assets/js/examplebuttons.js"></script>
+    <!-- <script src="assets/js/textanimation.js"></script> -->
 </body>
 
 </html>
