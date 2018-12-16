@@ -1,3 +1,4 @@
+
 const features = ['LABEL_DETECTION', 'TEXT_DETECTION', 'FACE_DETECTION', 'LANDMARK_DETECTION', 'LOGO_DETECTION', 'SAFE_SEARCH_DETECTION', 'IMAGE_PROPERTIES']
 const likelyhoodValue = {
     'UNKNOW': null,
@@ -7,6 +8,8 @@ const likelyhoodValue = {
     'LIKELY': 1,
     'VERY_LIKELY': 2
 }
+
+
 
 //defining function to call google Vision, get image properties, store colors in local memory and display colors in html div with id #display
 var googleVisionImageProperties = (url) => {
@@ -43,33 +46,27 @@ var googleVisionImageProperties = (url) => {
             localStorage.setItem(`newColor${i}`, rgbColor)
         }
     }
-    setStyles();
+    $(document).ready(function () {
+        var sideBar = localStorage.getItem('newColor0');
+        var sideBarHeader = localStorage.getItem('newColor3');
+        var sideBarTag = localStorage.getItem('newColor4')
+        var header = localStorage.getItem('newColor6')
+        var footer = localStorage.getItem('newColor8')
+        var button = localStorage.getItem('newColor2')
+        var buttonText = localStorage.getItem('newColor9')
+    
+        $('.sidebar').css('background-color', sideBar);
+        $('.sidebar').css('color', sideBarHeader);
+        $('.brand-tagline').css('color', sideBarTag);
+        $('.typewriter h1').css('color', header);
+        $('.footer').css('color', footer);
+        $('#submitButton').css('background-color', button);
+        $('#submitButton').css('color', buttonText);
+        $( "html" ).animate({
+            backgroundColor: sideBar
+        }, 2000).delay(1000).animate({
+            backgroundColor: '#FFF'
+        },3000);
+        
+    })
 }
-
-function setStyles() {
-    var sideBar = localStorage.getItem('newColor0');
-    var sideBarHeader = localStorage.getItem('newColor3');
-    var sideBarTag = localStorage.getItem('newColor4')
-    var header = localStorage.getItem('newColor6')
-    var footer = localStorage.getItem('newColor8')
-    var button = localStorage.getItem('newColor2')
-    var buttonText = localStorage.getItem('newColor9')
-
-    console.log(sideBar);
-    $('.sidebar').css('background-color', sideBar);
-    $('.sidebar').css('color', sideBarHeader);
-    $('.brand-tagline').css('color', sideBarTag);
-    $('.typewriter h1').css('color', header);
-    $('.footer').css('color', footer);
-    $('#submitButton').css('background-color', button);
-    $('#submitButton').css('color', buttonText);
-
-    $.keyframe.define([{
-        name: 'pulse',
-           '0%':   {backgroundColor: sideBar},
-           '100%': {backgroundColor: "#FFFFFF"}
-    }]);
-    $('#body').playKeyframe({name:"pulse"})
-  }
-
-  

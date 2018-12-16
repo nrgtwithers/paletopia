@@ -29,7 +29,7 @@ html, body {
     justify-content: center;
     height: 100%;
     width: 100%;
-    animation: pulse 5s infinite;
+    animation: pulse 5s forwards;
   }
   
   /* DEMO-SPECIFIC STYLES */
@@ -72,7 +72,7 @@ html, body {
       background-color:rgb(3, 3, 56);
     }
     100% {
-      background-color: #FFFFFF;
+      background-color: #FFFFFF 1s forwards;
     }
   }  
 
@@ -205,8 +205,6 @@ html, body {
 
 .footer {
     padding: 1em 0;
-    text-align: center;
-    color: darkgrey;
 }
 .footer a {
     color: #ccc;
@@ -236,9 +234,7 @@ html, body {
 
     .footer {
         text-align: center;
-        color: darkgrey;
     }
-
 #sidebar{
     background-color:#a4c9e2;
     width:20%;
