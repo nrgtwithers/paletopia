@@ -36,4 +36,4 @@ var getColors = (url) => {
             localStorage.setItem(`newColor${i}`, rgbColor)
         }
     }
-}
+}localStorage
