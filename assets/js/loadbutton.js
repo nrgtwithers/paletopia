@@ -17,6 +17,7 @@ $("#loadButton").on("click", function () {
     var img = $("<img>").attr("src", localStorage.getItem('savedUrl')).css("max-width", "100%")
     $("#current-image").append(img)
 
+    //apply color pallet from local storage to css
     applyColorPallet()
 })
 
