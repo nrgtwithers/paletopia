@@ -12,7 +12,11 @@ exampleUrlsArr = [
     {
         url:"https://images.unsplash.com/photo-1502741338009-cac2772e18bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
         name:"blueberry"
-    }
+    },
+    {
+        url:"https://images.unsplash.com/photo-1525423235703-6c285d74010e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+        name:"watermelon"
+    },
 ]
 
 $("#example-buttons").append($("<p>").text("Try one of these."))
