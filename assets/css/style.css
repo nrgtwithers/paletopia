@@ -31,7 +31,9 @@ html, body {
     width: 100%;
     animation: pulse 5s forwards;
   }
+
   
+
   /* DEMO-SPECIFIC STYLES */
   .typewriter h1 {
     color:rgb(3, 3, 56);
@@ -194,7 +196,7 @@ html, body {
     }
 
 .post-images {
-    margin: 1em 0;
+    margin: 0em 0;
 }
 .post-image-meta {
     margin-top: -3.5em;
@@ -235,6 +237,11 @@ html, body {
     .footer {
         text-align: center;
     }
+
+#current-image{
+    margin-bottom: -5px;
+}
+
 #sidebar{
     background-color:#a4c9e2;
     width:20%;
