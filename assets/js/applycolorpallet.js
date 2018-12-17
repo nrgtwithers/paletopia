@@ -16,8 +16,12 @@ let applyColorPallet = function () {
         $('.brand-tagline').css('color', sideBarTag);
         $('.typewriter h1').css('color', header);
         $('.footer').css('color', footer);
-        $('.color-button').css('background-color', button);
-        $('.color-button').css('color', buttonText);
+        $('#submitButton').css('background-color', button);
+        $('#submitButton').css('color', buttonText);
+        $('#saveButton').css('background-color', button);
+        $('#saveButton').css('color', buttonText);
+        $('#loadButton').css('background-color', button);
+        $('#loadButton').css('color', buttonText);
 
         //animating background colors
         $("html").animate({ backgroundColor: sideBar }, 2000).delay(1000).animate({ backgroundColor: '#FFF' }, 3000);
