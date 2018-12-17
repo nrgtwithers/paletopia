@@ -1,6 +1,10 @@
 //defining function to call google Vision, get image properties, store colors in local memory and display colors in html div with id #display
 var getColors = (url) => {
 
+    //clear displays
+    $("#current-image").empty()
+    $("#display").empty()
+
     //appending request image to display div
     var img = $("<img>").attr("src", url).css("max-width", "100%")
     $("#current-image").append(img)

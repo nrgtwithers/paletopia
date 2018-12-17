@@ -2,8 +2,6 @@
 $("#submitButton").on("click", function () {
 
     event.preventDefault() //prevent refresh
-    $("#current-image").empty()
-    $("#display").empty()
 
     //getting user input url from form
     var userInput = $("#userInput").val()
