@@ -12,12 +12,10 @@ This is the first project for the November 2018 - February 2019 George Washingto
 
 ### What needs to be done
 
-[ ] Allow users to upload photo from their computer
-[ ] Allow users to take a picture from their devices camara
-[ ] Make a better layout
-[ ] Apply colors from color pallete to the css file
-[ ] Allow user to recall color pallete from local storage
-[ ] Display color pallete currently storage in local storage
+[ ] Allow users to upload photo from their computer  
+[ ] Allow users to take a picture from their devices camara  
+[ ] Polish Layout    
+[ ] Display color pallete currently storage in local storage  
 
 ## Development Log
 
