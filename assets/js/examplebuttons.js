@@ -27,6 +27,7 @@ exampleUrlsArr.forEach((urlname) => {
     let button = $("<button>").text(urlname.name)
     button.on("click", () => {
         event.preventDefault()
+        localStorage.setItem("newUrl", urlname.url)
         getColors(urlname.url)
     })
     button.addClass("example-buttons")
