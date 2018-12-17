@@ -9,11 +9,6 @@ $("#submitButton").on("click", function () {
     //storing current img url in local storage
     localStorage.setItem("newUrl", userInput)
 
-    //appending request image to display div
-    var img = $("<img>").attr("src", userInput).css("max-width", "100%")
-    $("#current-image").append(img)
-    $("#display").append($("<h1>")).text("loading...")
-    
     //call function that will analize colors, store colors in local storage, and display colors in #display
     getColors(userInput)
 
