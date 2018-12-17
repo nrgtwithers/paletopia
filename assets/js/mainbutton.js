@@ -19,7 +19,7 @@ $("#submitButton").on("click", function () {
     //call function that will analize colors, store colors in local storage, and display colors in #display
     googleVisionImageProperties(userInput)
 
-    //call function that will apply the color palllet from local storage to the css properties. Wait 3.5 seconds to make sure the colors from the most recent call are in local storage when this function is run. 
+    //call function that will apply the color palllet from local storage to the css properties. Waits 3.5 seconds to make sure the colors from the most recent call are in local storage when this function is run. 
     setTimeout(function(){applyColorPallet()}, 3500)
 })
 
