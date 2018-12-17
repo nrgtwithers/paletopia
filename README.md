@@ -16,6 +16,7 @@ This is the first project for the November 2018 - February 2019 George Washingto
 [ ] Allow users to take a picture from their devices camara  
 [ ] Polish Layout    
 [ ] Display color pallete currently storage in local storage  
+[ ] 
 
 ## Development Log
 
