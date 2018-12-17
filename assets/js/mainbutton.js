@@ -9,6 +9,10 @@ $("#submitButton").on("click", function () {
     //storing current img url in local storage
     localStorage.setItem("newUrl", userInput)
 
+    //clear displays
+    $("#current-image").empty()
+    $("#display").empty()
+
     //call function that will analize colors, store colors in local storage, and display colors in #display
     getColors(userInput)
 
