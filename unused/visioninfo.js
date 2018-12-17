@@ -1,9 +1,0 @@
-const features = ['LABEL_DETECTION', 'TEXT_DETECTION', 'FACE_DETECTION', 'LANDMARK_DETECTION', 'LOGO_DETECTION', 'SAFE_SEARCH_DETECTION', 'IMAGE_PROPERTIES']
-const likelyhoodValue = {
-    'UNKNOW': null,
-    'VERY_UNLIKELY': -2,
-    'UNLIKELY': -1,
-    'POSSIBLE': 0,
-    'LIKELY': 1,
-    'VERY_LIKELY': 2
-}
