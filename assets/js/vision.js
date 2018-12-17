@@ -8,7 +8,7 @@ var getColors = (url) => {
     visionResponse.send(visionOption)
 
     //doing stuff with the response once the response is loaded
-    visionResponse.onload = () => {
+    visionResponse.onload = function () {
 
         //putting colors from visionResponse into an array colorsArray
         colorsArray = JSON.parse(visionResponse.response).responses[0].imagePropertiesAnnotation.dominantColors.colors
@@ -22,8 +22,9 @@ var getColors = (url) => {
         //write heading for current color pallette 
         $("#display").append($("<h1>").text("Current Color Pallete"))
 
-        //iterating over array of colors colorsArray. At this point, each color is 
-        colorsArray.forEach((color) => {
+        //iterating over array of colors colorsArray
+        for (i = 0; i < colorsArray.length; i++) {
+            let color = colorsArray[i].color
 
             //reformat each color to css format -- rgb(12,50,39) 
             let rgbColor = `rgb(${color.red},${color.green},${color.blue})`
@@ -33,6 +34,6 @@ var getColors = (url) => {
 
             //storing each color from the array into local storage
             localStorage.setItem(`newColor${i}`, rgbColor)
-        })
+        }
     }
 }
