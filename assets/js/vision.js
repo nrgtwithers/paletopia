@@ -28,9 +28,6 @@ var getColors = (url) => {
         //empty display used to show colors
         $("#display").empty()
 
-        //write heading for current color pallette 
-        $("#display").append($("<h1>").text("Current Color Pallete").addClass("subheader"))
-
         //iterating over array of colors colorsArray
         for (i = 0; i < colorsArray.length; i++) {
             let color = colorsArray[i].color
@@ -39,11 +36,10 @@ var getColors = (url) => {
             let rgbColor = `rgb(${color.red},${color.green},${color.blue})`
 
             //displaying css formatted color in the DOM
-            $("#display").append($("<div>").text(rgbColor).css(`background-color`, rgbColor).css('min-height', '75px'))
+            $("#display").append($("<div>").text('').css(`background-color`, rgbColor).css('min-height', '200px').css('max-width','10%').css('min-width','10%').css('float','left'))
 
             //storing each color from the array into local storage
             localStorage.setItem(`newColor${i}`, rgbColor)
-
         }
         applyColorPallet()
     }
