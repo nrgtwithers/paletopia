@@ -20,6 +20,6 @@ $("#submitButton").on("click", function () {
     getColors(userInput)
 
     //call function that will apply the color palllet from local storage to the css properties. Waits 3.5 seconds to make sure the colors from the most recent call are in local storage when this function is run. 
-    setTimeout(function(){applyColorPallet()}, 900)
+    setTimeout(function(){applyColorPallet()}, 2100)
 })
 
