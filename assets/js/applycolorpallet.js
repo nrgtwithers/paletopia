@@ -6,9 +6,12 @@ let applyColorPallet = function () {
         var sideBarHeader = localStorage.getItem('newColor3');
         var sideBarTag = localStorage.getItem('newColor4')
         var header = localStorage.getItem('newColor6')
+        var subheader = localStorage.getItem('newColor1')
         var footer = localStorage.getItem('newColor8')
         var button = localStorage.getItem('newColor2')
         var buttonText = localStorage.getItem('newColor9')
+        var button2 = localStorage.getItem('newColor5')
+        var buttonText2 = localStorage.getItem('newColor7')
 
         //setting css color properties to colors from the current color pallete 
         $('.sidebar').css('background-color', sideBar);
@@ -22,6 +25,9 @@ let applyColorPallet = function () {
         $('#saveButton').css('color', buttonText);
         $('#loadButton').css('background-color', button);
         $('#loadButton').css('color', buttonText);
+        $('.example-buttons').css('background-color', button2);
+        $('.example-buttons').css('color', buttonText2);
+        $('.subheader').css('color', subheader)
 
         //animating background colors
         $("html").animate({ backgroundColor: sideBar }, 2000).delay(1000).animate({ backgroundColor: '#FFF' }, 3000);

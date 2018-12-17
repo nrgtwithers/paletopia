@@ -29,7 +29,7 @@ var getColors = (url) => {
         $("#display").empty()
 
         //write heading for current color pallette 
-        $("#display").append($("<h1>").text("Current Color Pallete"))
+        $("#display").append($("<h1>").text("Current Color Pallete").addClass("subheader"))
 
         //iterating over array of colors colorsArray
         for (i = 0; i < colorsArray.length; i++) {
