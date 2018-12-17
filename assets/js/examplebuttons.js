@@ -24,5 +24,6 @@ exampleUrlsArr.forEach((urlname) => {
         event.preventDefault()
         getColors(urlname.url)
     })
+    button.addClass("color-button")
     $("#example-buttons").append(button)
 })
