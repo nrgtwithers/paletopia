@@ -34,6 +34,8 @@ var getColors = (url) => {
 
             //storing each color from the array into local storage
             localStorage.setItem(`newColor${i}`, rgbColor)
+
+            applyColorPallet()
         }
     }
 }
