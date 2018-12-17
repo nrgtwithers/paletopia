@@ -1,6 +1,8 @@
 $("#loadButton").on("click", function () {
 
     $("#display").empty()
+    $("#display-saved").empty()
+
     $("#display").append($("<h1>").text("Current Color Pallete"))
     $("#display-saved").append($("<h1>").text("Saved Color Pallete"))
 
@@ -14,8 +16,9 @@ $("#loadButton").on("click", function () {
         $("#display-saved").append($("<div>").text(color).css(`background-color`, color).css('min-height', '10px'))
     }
 
-    //appending saved image to #current-image
     $("#current-image").empty()
+    
+    //appending saved image to #current-image
     var img = $("<img>").attr("src", localStorage.getItem('savedUrl')).css("max-width", "100%")
     $("#current-image").append(img)
 

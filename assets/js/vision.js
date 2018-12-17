@@ -1,5 +1,5 @@
 //defining function to call google Vision, get image properties, store colors in local memory and display colors in html div with id #display
-var googleVisionImageProperties = (url) => {
+var getColors = (url) => {
 
     //api request to google vision. This returns the response as visionResponse
     var visionOption = JSON.stringify({ "requests": [{ "image": { "source": { "imageUri": url } }, "features": [{ "type": 'IMAGE_PROPERTIES', "maxResults": 5 }] }] });
@@ -19,7 +19,9 @@ var googleVisionImageProperties = (url) => {
         //empty display used to show colors
         $("#display").empty()
 
+        //write heading for current color pallette 
         $("#display").append($("<h1>").text("Current Color Pallete"))
+
         //iterating over array of colors colorsArray
         for (i = 0; i < colorsArray.length; i++) {
             let color = colorsArray[i].color
