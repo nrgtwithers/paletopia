@@ -23,8 +23,7 @@ var getColors = (url) => {
         $("#display").append($("<h1>").text("Current Color Pallete"))
 
         //iterating over array of colors colorsArray
-        for (i = 0; i < colorsArray.length; i++) {
-            let color = colorsArray[i].color
+        colorsArray.forEach((color) => {
 
             //reformat each color to css format -- rgb(12,50,39) 
             let rgbColor = `rgb(${color.red},${color.green},${color.blue})`
@@ -34,6 +33,6 @@ var getColors = (url) => {
 
             //storing each color from the array into local storage
             localStorage.setItem(`newColor${i}`, rgbColor)
-        }
+        })
     }
 }

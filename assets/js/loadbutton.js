@@ -11,6 +11,7 @@ $("#loadButton").on("click", function () {
     //iterating through colors in local storage
     for (i = 0; i < 10; i++) {
         let color = localStorage.getItem(`savedColor${i}`)
+        //putting colors in storage
         localStorage.setItem(`newColor${i}`, color)
 
         //displaying css formatted color in the DOM
