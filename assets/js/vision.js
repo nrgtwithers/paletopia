@@ -44,7 +44,7 @@ var googleVisionImageProperties = (url) => {
             localStorage.setItem(`newColor${i}`, rgbColor)
 
             //apply colors from local storage of current color pallete to the css
-            applyColorPallet()
+
         }
     }
 }
