@@ -1,3 +1,4 @@
+//defining a function that will apply colors currently in local storage to the css properties that color the text and backgrounds of the document
 let applyColorPallet = function () {
     $(document).ready(function () {
         //pulling rgb colors from current color pallete
@@ -19,6 +20,8 @@ let applyColorPallet = function () {
         $('#submitButton').css('color', buttonText);
 
         //animating background colors
-        $("html").animate({ backgroundColor: sideBar }, 2000).delay(1000).animate({ backgroundColor: '#FFF' }, 3000);
+        $("html").animate({ backgroundColor: sideBar }, 2000).delay(1000)
     })
 }
+
+// .animate({ backgroundColor: '#FFF' }, 3000);

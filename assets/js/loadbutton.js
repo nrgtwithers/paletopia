@@ -1,8 +1,10 @@
 $("#loadButton").on("click", function () {
 
+    //clear displays
     $("#display").empty()
     $("#display-saved").empty()
 
+    //print display headers
     $("#display").append($("<h1>").text("Current Color Pallete"))
     $("#display-saved").append($("<h1>").text("Saved Color Pallete"))
 
@@ -16,9 +18,10 @@ $("#loadButton").on("click", function () {
         $("#display-saved").append($("<div>").text(color).css(`background-color`, color).css('min-height', '10px'))
     }
 
+    //clear current image
     $("#current-image").empty()
     
-    //appending saved image to #current-image
+    //display saved image in #current-image
     var img = $("<img>").attr("src", localStorage.getItem('savedUrl')).css("max-width", "100%")
     $("#current-image").append(img)
 
