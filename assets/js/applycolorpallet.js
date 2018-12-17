@@ -30,6 +30,7 @@ let applyColorPallet = function () {
         $('.subheader').css('color', subheader)
 
         //animating background colors
+        $("html").animate()
         $("html").animate({ backgroundColor: sideBar }, 2000).delay(1000).animate({ backgroundColor: '#FFF' }, 3000);
     })
 }
