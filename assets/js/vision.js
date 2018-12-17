@@ -42,9 +42,9 @@ var googleVisionImageProperties = (url) => {
 
             //storing each color from the array into local storage
             localStorage.setItem(`newColor${i}`, rgbColor)
+
+            //apply colors from local storage of current color pallete to the css
+            applyColorPallet()
         }
     }
-
-    //apply colors from local storage of current color pallete to the css
-    applyColorPallet()
 }
