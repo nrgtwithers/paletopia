@@ -1,7 +1,7 @@
 
 exampleUrlsArr = [
     {
-        url: "https://images.unsplash.com/photo-1464918877125-24db0dc393cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80",
+        url: "https://images.unsplash.com/reserve/RNm0KceQ4Gbpb0xldOe7_DSC_0679_2.JPG?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=702&q=80",
         name: "banana"
     },
     {   
