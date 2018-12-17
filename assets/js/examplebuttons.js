@@ -22,6 +22,16 @@ exampleUrlsArr = [
         url:"https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=656&q=80",
         name:"coffee"
     },
+    {
+        url:"https://images.unsplash.com/photo-1533017232161-9e487b18e41d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+        name:"pug"
+    },
+    {
+        url:"https://images.unsplash.com/photo-1526452765549-517b13adb4f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+        name:"calico"
+    },
+    
+    
 ]
 
 $("#example-buttons").append($("<p>").text("Try one of these."))
