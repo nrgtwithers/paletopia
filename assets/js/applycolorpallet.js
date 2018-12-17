@@ -20,8 +20,7 @@ let applyColorPallet = function () {
         $('#submitButton').css('color', buttonText);
 
         //animating background colors
-        $("html").animate({ backgroundColor: sideBar }, 2000).delay(1000)
+        $("html").animate({ backgroundColor: sideBar }, 2000).delay(1000).animate({ backgroundColor: '#FFF' }, 3000);
     })
 }
 
-// .animate({ backgroundColor: '#FFF' }, 3000);
