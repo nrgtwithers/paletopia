@@ -12,8 +12,6 @@ This is the first project for the November 2018 - February 2019 George Washingto
 
 ### What needs to be done
 
-[ ] Allow users to upload photo from their computer  
-[ ] Allow users to take a picture from their devices camara  
 [ ] Polish Layout    
 [ ] Display color pallete currently storage in local storage  
 [ ] 
