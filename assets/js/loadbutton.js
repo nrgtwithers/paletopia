@@ -21,16 +21,25 @@ $("#loadButton").on("click", function () {
 
         //reformat each color to css format -- rgb(12,50,39) 
         let rgbColor = color
+ //displaying css formatted color in the DOM
+ $("#display").append($("<div>").text('').css(`background-color`, rgbColor).css('min-height', '75px').attr('id',`colorDisplay${i}`))
 
-        //displaying css formatted color in the DOM
-        $("#display").append($("<div>").text(``).css(`background-color`, rgbColor).css('min-height', '200px').css('max-width', '10%').css('min-width', '10%').css('float', 'left'))
+ // //displaying css formatted color in the DOM
+ // $("#display").append($("<div>").text(``).css(`background-color`, rgbColor).css('min-height', '200px').css('max-width','10%').css('min-width','10%').css('float','left'))
 
-        let hexColor = rgbToHex(rgbColor)
-        let colorName = ntc.name(hexColor)
+ let hexColor = rgbToHex(rgbColor)
+ let colorName = ntc.name(hexColor)
+ let brightness = getBrightness(rgbColor)
 
-        $("#color-info").append($("<p>").text(`Color${i}: ${hexColor} ${rgbColor} ${colorName[1]}`))
-    }
+ //display information on color below the pallete
+ //$("#color-info").append($("<p>").text(`Color${i}: ${hexColor} ${rgbColor} ${colorName[1]}`))
 
-    //apply color pallet from local storage to css
-    applyColorPallet()
+ //storing each color from the array into local storage
+ localStorage.setItem(`newColor${i}`, rgbColor)
+ localStorage.setItem(`newColor${i}hex`, hexColor)
+ localStorage.setItem(`newColor${i}name`, colorName[1])
+ localStorage.setItem(`newColor${i}brightness`, getBrightness(rgbColor))
+}
+$("#display").append($("<div>").text('click color pallete to display information'))
+applyColorPallet()
 })
