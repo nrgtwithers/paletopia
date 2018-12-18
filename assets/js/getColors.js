@@ -19,9 +19,6 @@ var getColors = (url) => {
     //doing stuff with the response once the response is loaded
     visionResponse.onload = function () {
 
-
-        console.log(visionResponse)
-
         //putting colors from visionResponse into an array colorsArray
         colorsArray = JSON.parse(visionResponse.response).responses[0].imagePropertiesAnnotation.dominantColors.colors
 
@@ -38,13 +35,6 @@ var getColors = (url) => {
 
             //reformat each color to css format -- rgb(12,50,39) 
             let rgbColor = `rgb(${color.red},${color.green},${color.blue})`
-
-            //displaying css formatted color in the DOM
-            $("#display").append($("<div>").text('').css(`background-color`, rgbColor).css('min-height', '75px').attr('id',`colorDisplay${i}`))
-
-            // //displaying css formatted color in the DOM
-            // $("#display").append($("<div>").text(``).css(`background-color`, rgbColor).css('min-height', '200px').css('max-width','10%').css('min-width','10%').css('float','left'))
-
             let hexColor = rgbToHex(rgbColor)
             let colorName = ntc.name(hexColor)
             let brightness = getBrightness(rgbColor)
@@ -56,7 +46,7 @@ var getColors = (url) => {
             localStorage.setItem(`currentColor${i}`, rgbColor)
             localStorage.setItem(`currentColor${i}hex`, hexColor)
             localStorage.setItem(`currentColor${i}name`, colorName[1])
-            localStorage.setItem(`currentColor${i}brightness`, getBrightness(rgbColor))
+            localStorage.setItem(`currentColor${i}brightness`, brightness)
         }
         // $("#display").append($("<div>").text('click color pallete to display information'))
         applyColorPallet()

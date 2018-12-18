@@ -1,3 +1,5 @@
+
+
 $("#loadButton").on("click", function () {
 
     //clear displays
@@ -10,8 +12,6 @@ $("#loadButton").on("click", function () {
     var img = $("<img>").attr("src", localStorage.getItem('savedUrl')).css("max-width", "100%")
     $("#current-image").append(img)
 
-    //print display headers
-    $("#display").append($("<h1>").text("Current Color Pallete"))
 
     //iterating through colors in local storage
     for (i = 0; i < 10; i++) {
@@ -21,8 +21,6 @@ $("#loadButton").on("click", function () {
 
         //reformat each color to css format -- rgb(12,50,39) 
         let rgbColor = color
- //displaying css formatted color in the DOM
- $("#display").append($("<div>").text('').css(`background-color`, rgbColor).css('min-height', '75px').attr('id',`colorDisplay${i}`))
 
  // //displaying css formatted color in the DOM
  // $("#display").append($("<div>").text(``).css(`background-color`, rgbColor).css('min-height', '200px').css('max-width','10%').css('min-width','10%').css('float','left'))
@@ -40,6 +38,6 @@ $("#loadButton").on("click", function () {
  localStorage.setItem(`currentColor${i}name`, colorName[1])
  localStorage.setItem(`currentColor${i}brightness`, brightness)
 }
-$("#display").append($("<div>").text('click color pallete to display information'))
 applyColorPallet()
+$("#display").append($("<div>").text('click color pallete to display information'))
 })

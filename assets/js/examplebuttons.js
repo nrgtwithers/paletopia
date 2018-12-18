@@ -39,7 +39,6 @@ exampleUrlsArr = [
 $("#example-buttons").append($("<p>").text("Try one of these."))
 
 exampleUrlsArr.forEach((urlname) => {
-    console.log(urlname.url)
     let button = $("<button>").text(urlname.name)
     button.on("click", () => {
         event.preventDefault()
