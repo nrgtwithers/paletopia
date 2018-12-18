@@ -55,7 +55,7 @@ var getColors = (url) => {
             localStorage.setItem(`currentColor${i}name`, colorName[1])
             localStorage.setItem(`currentColor${i}brightness`, getBrightness(rgbColor))
         }
-        $("#display").append($("<div>").text('click color pallete to display information'))
+        // $("#display").append($("<div>").text('click color pallete to display information'))
         applyColorPallet()
     }
 }
