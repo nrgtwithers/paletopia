@@ -24,7 +24,7 @@ h3 {
 /* GLOBAL STYLES */
 html, body {
     background: transparent;
-    padding-top: 5em;
+    padding-top: 0;
     display: flex;
     justify-content: center;
     height: 100%;
@@ -39,32 +39,32 @@ html, body {
 
   
 
-  /* DEMO-SPECIFIC STYLES */
+  /* DEMO-SPECIFIC STYLES
   .typewriter h1 {
     color:rgb(3, 3, 56);
     font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
+    overflow: hidden; /* Ensures the content is not revealed until the animation 
+    border-right: .15em solid orange; /* The typwriter cursor 
+    white-space: nowrap; /* Keeps the content on a single line 
     margin-top: 0px;
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens 
+    letter-spacing: .15em; Adjust as needed 
     animation: 
       typing 3.5s steps(30, end),
       blink-caret .5s step-end infinite;
-  }
+  }*/
   
-  /* The typing effect */
+  /* The typing effect 
   @keyframes typing {
     from { width: 0 }
     to { width: 100% }
   }
   
-  /* The typewriter cursor effect */
+  /* The typewriter cursor effect 
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: grey }
-  }
+  } */
 
 /* Background Animation */
 
