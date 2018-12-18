@@ -33,7 +33,7 @@ html, body {
     margin:0; /*gets rid of white space around body*/
     margin-top:16px;
     height:150vh; /*you can let your content define it's height*/
-    position: fixed; /*REQUIRED Sets up positioning for your footer*/
+    position: relative; /*REQUIRED Sets up positioning for your footer*/
   }
 
   
