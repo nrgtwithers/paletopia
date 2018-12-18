@@ -84,8 +84,8 @@ html, body {
     }
   }  
 /*Animate.css*/
-.p {
-    font-size: 10em;
+#directions {
+    font-size: 15px;
     animation: bounce 5s forwards;
     animation-fill-mode: forwards;
     /* animation-duration: 2s;
