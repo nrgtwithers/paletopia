@@ -30,6 +30,10 @@ html, body {
     height: 100%;
     width: 100%;
     animation: pulse 5s forwards;
+    margin:0; /*gets rid of white space around body*/
+    margin-top:16px;
+    height:150vh; /*you can let your content define it's height*/
+    position: fixed; /*REQUIRED Sets up positioning for your footer*/
   }
 
   
@@ -207,6 +211,17 @@ html, body {
 
 .footer {
     padding: 1em 0;
+    width:100%;
+    height:44px;
+    padding-top:0px;
+    background:transparent;
+    color:darkgray;
+    font-weight:bold;
+    font-size:15px;
+    text-align:center;
+    position:fixed; /*Here's what sticks it*/
+    bottom:0;          /*to the bottom of the body/page*/
+    left:0; 
 }
 .footer a {
     color: #ccc;
