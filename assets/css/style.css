@@ -209,20 +209,21 @@ html, body {
     text-shadow: 0 1px 1px #333;
 }
 
-.footer {
+#sticky {
     padding: 1em 0;
     width:100%;
     height:44px;
-    padding-top:0px;
+    padding-top:20px;
     background:transparent;
-    color:darkgray;
+    color:darkgrey;
     font-weight:bold;
     font-size:15px;
     text-align:center;
-    position:fixed; /*Here's what sticks it*/
+    position: fixed; /*Here's what sticks it*/
     bottom:0;          /*to the bottom of the body/page*/
-    left:0; 
-}
+    left:0;            /*and to the left of the body/page.*/
+  }
+
 .footer a {
     color: #ccc;
     font-size: 80%;
