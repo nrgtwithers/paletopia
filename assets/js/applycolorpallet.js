@@ -1,6 +1,19 @@
 //defining a function that will apply colors currently in local storage to the css properties that color the text and backgrounds of the document
 let applyColorPallet = function () {
     $(document).ready(function () {
+       
+        let colorsBrightnessObjectArray = []
+
+       for (i=0;i<10;i++){
+           let newObj = {}
+           newObj.color = localStorage.getItem(`newColor${i}`)
+           newObj.brightness = getBrightness(newObj.color)
+           colorsBrightnessObjectArray.push(newObj)
+       }
+       
+       console.log(colorsBrightnessObjectArray)
+       
+       
         //pulling rgb colors from current color pallete
         var sideBar = localStorage.getItem('newColor0');
         var sideBarHeader = localStorage.getItem('newColor3');
