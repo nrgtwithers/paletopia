@@ -12,14 +12,31 @@ let applyColorPallet = function () {
             colorsBrightnessArray.push(newObj)
         }
 
-        let sortedColorsBrightnessArray = colorsBrightnessArray.sort(function (a, b) {
-            return a.brightness - b.brightness;
+        let sortedColors = colorsBrightnessArray.sort(function (a, b) {
+            return b.brightness - a.brightness;
         })
 
-        sortedColorsBrightnessArray.forEach((obj) => {
+        sortedColors.forEach((obj) => {
             console.log(obj)
         }
         )
+
+        /*
+        darkest - sortedColors[9].color
+        darker
+        dark
+        mediumdarker
+        mediumdark
+        mediumlight
+        mediumlighter
+        light
+        lighter
+        lightest - sortedColors[0].color
+        */
+
+
+
+
 
         //pulling rgb colors from current color pallete
         var sideBar = localStorage.getItem('currentColor0');
@@ -34,30 +51,28 @@ let applyColorPallet = function () {
         var buttonText2 = localStorage.getItem('currentColor7')
 
 
-
         //setting css color properties to colors from the current color pallete 
-        $('.sidebar').css('background-color', sideBar);
-        $('.sidebar').css('color', sideBarHeader);
-        $('.brand-tagline').css('color', sideBarTag);
-        $('.typewriter h1').css('color', header);
-        $('.footer').css('color', footer);
-        $('#submitButton').css('background-color', button);
-        $('#submitButton').css('color', buttonText);
-        $('#saveButton').css('background-color', button);
-        $('#saveButton').css('color', buttonText);
-        $('#loadButton').css('background-color', button);
-        $('#loadButton').css('color', buttonText);
-        $('.example-buttons').css('background-color', button2);
-        $('.example-buttons').css('color', buttonText2);
-        $('.subheader').css('color', subheader);
-        $('#directions').css('color', header);
-        $('#example-buttons').css('color', header);
+        $('.sidebar').css('background-color', sortedColors[5].color);
+        $('.sidebar').css('color', sortedColors[1].color);
+        $('.brand-tagline').css('color', sortedColors[9].color);
+        $('.typewriter h1').css('color', 'red');
+        $('.footer').css('color', sortedColors[6].color);
+        $('.color-button').css('background-color', sortedColors[8].color);
+        $('.color-button').css('color', sortedColors[4].color);
+   
+        $('.example-buttons').css('background-color', sortedColors[7].color);
+        $('.example-buttons').css('color', sortedColors[3].color);
+        $('.subheader').css('color', 'red');
+        $('#directions').css('color', sortedColors[5].color);
+        $('#example-buttons').css('color', sortedColors[5].color);
+        $("#userInput").css('background-color', sortedColors[0].color)
+        $("#userInput").css('color', sortedColors[2].color)
         // $("<button>").hover(function(){
         //     $(this).css("background-color", sideBarTag);
         //     },
 
         //animating background colors
         $("html").animate()
-        $("html").animate({ backgroundColor: sideBar }, 2000).delay(1000).animate({ backgroundColor: button2 }, 3000);
+        $("html").animate({ backgroundColor: sortedColors[5].color}, 1000).delay(150).animate({ backgroundColor: sortedColors[0].color }, 1500);
     })
 }
