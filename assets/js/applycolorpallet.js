@@ -27,7 +27,12 @@ let applyColorPallet = function () {
         $('#loadButton').css('color', buttonText);
         $('.example-buttons').css('background-color', button2);
         $('.example-buttons').css('color', buttonText2);
-        $('.subheader').css('color', subheader)
+        $('.subheader').css('color', subheader);
+        $('#directions').css('color', header);
+        $('#example-buttons').css('color', header);
+        // $("<button>").hover(function(){
+        //     $(this).css("background-color", sideBarTag);
+        //     },
 
         //animating background colors
         $("html").animate()

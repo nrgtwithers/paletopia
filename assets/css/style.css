@@ -29,9 +29,10 @@ html, body {
     justify-content: center;
     height: 100%;
     width: 100%;
-    animation: pulse 5s forwards;
+    animation: transition 5s forwards;
+    margin-top: 0px;
     margin:0; /*gets rid of white space around body*/
-    margin-top:16px;
+    /* margin-top:16px; */
     height:150vh; /*you can let your content define it's height*/
     position: relative; /*REQUIRED Sets up positioning for your footer*/
   }
@@ -45,6 +46,7 @@ html, body {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
+    margin-top: 0px;
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
@@ -73,7 +75,7 @@ html, body {
     top:0;
   }
    
-   @keyframes pulse {
+   @keyframes transition {
     0% {
       background-color:rgb(3, 3, 56);
     }
@@ -81,6 +83,18 @@ html, body {
       background-color: #FFFFFF 1s forwards;
     }
   }  
+/*Animate.css*/
+.p {
+    font-size: 10em;
+    animation: bounce 5s forwards;
+    animation-fill-mode: forwards;
+    /* animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: 1 forwards; */
+  }
+  @keyframes bounce{
+
+  }
 
 /* LAYOUT CSS */
 .pure-img-responsive {
@@ -94,14 +108,17 @@ html, body {
 
 .header {
     text-align: center;
-    top: auto;
-    margin: 3em auto;
+    top: 50px;
+    margin: 2em auto;
 }
 
 .sidebar {
     background:rgb(3, 3, 56);
     color: #fff;
     margin-right:10px;
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .brand-title,
@@ -209,6 +226,29 @@ html, body {
     text-shadow: 0 1px 1px #333;
 }
 
+button{
+    border-radius: 2px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: skyblue; /* blue */
+    color: white;
+  }
+
+#loadButton{
+    border-radius: 2px;
+}
+
+#saveButton{
+    border-radius: 2px;
+}
+
+#submitButton{
+    border-radius: 2px;
+}
+
 #sticky {
     padding: 1em 0;
     width:100%;
@@ -246,6 +286,7 @@ html, body {
 
     .sidebar {
         position: fixed;
+        height: 100%;
         top: 0;
         bottom: 0;
     }

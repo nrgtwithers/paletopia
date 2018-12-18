@@ -7,28 +7,17 @@
     <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
     <title>GWU - Group Project</title>
 
-    <!-- reset css-->
-    <!-- < link rel="stylesheet" href="assets/css/reset.css"> -->
     <!-- our css-->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100" rel="stylesheet">
-    <!--[if lte IE 8]>
-            <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
-        <![endif]-->
-    <!--[if gt IE 8]><!-->
+
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-    <!--<![endif]-->
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
-    <!-- [if lte IE 8]>
-                <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
-            <![endif]-->
-    <!--[if gt IE 8]><!-->
-    <!-- <link rel="stylesheet" href="./samp.css"> -->
-    <!-- <![endif] -->
 </head>
 
 <body id="body">
@@ -41,6 +30,10 @@
                     <h2 class="brand-tagline">generate color palette from images</h2>
                     <button id="saveButton" type="save" class="pure-button pure-button-active color-button">Save</button>
                     <button id="loadButton" type="save" class="pure-button pure-button-active color-button">Load</button>
+                    <!-- <hr>
+                    <p><strong>This is where the description of project.</strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu urna orci. Nam sit amet lorem nisi. Vestibulum ornare eget leo et vestibulum. Quisque neque lacus, sollicitudin eu consequat eu, bibendum vitae ante. Sed pharetra ex at justo volutpat auctor. Integer tempus tincidunt justo ac sollicitudin. Quisque dolor neque, tincidunt ut tortor sit amet, rutrum suscipit nunc.</p>
+                    <hr>
+                    <a href="https://github.com/IanWalston/ImageAnalysis"> Project's Github</a> -->
                     
                 </div>
             </div>
@@ -54,9 +47,12 @@
                             </div>
                         </legend>
                         <span>
-                            <p>
+                                <p id="directions" class="animated infinite bounce slower">
+                                    Paste in an image url to generate and apply a color pallete.
+                                </p>
+                            <!-- <p>
                                 Paste in an image url to generate and apply a color pallete.
-                            </p>
+                            </p> -->
                             <span>
                                 <input id="userInput" type="url" placeholder="Image URL">
                             </span>
