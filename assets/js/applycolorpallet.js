@@ -56,7 +56,7 @@ let applyColorPallet = function () {
         $('.sidebar').css('color', sortedColors[1].color);
         $('.brand-tagline').css('color', sortedColors[9].color);
         $('.typewriter h1').css('color', 'red');
-        $('.footer').css('color', sortedColors[6].color);
+        $('footer').css('color', sortedColors[6].color);
         $('.color-button').css('background-color', sortedColors[8].color);
         $('.color-button').css('color', sortedColors[4].color);
    
