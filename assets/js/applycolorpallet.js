@@ -2,11 +2,24 @@
 let applyColorPallet = function () {
     $(document).ready(function () {
 
-
+        //creating an array of colors with brightnessess stored in current colors local storage
+        let colorsBrightnessArray = []
         for (let i = 0; i < 10; i++) {
-            console.log(localStorage.getItem(`currentColor${i}brightness`))  
+
+            let newObj = {}
+            newObj.color = localStorage.getItem(`currentColor${i}`)
+            newObj.brightness = localStorage.getItem(`currentColor${i}brightness`)
+            colorsBrightnessArray.push(newObj)
         }
 
+        let sortedColorsBrightnessArray = colorsBrightnessArray.sort(function (a, b) {
+            return a.brightness - b.brightness;
+        })
+
+        sortedColorsBrightnessArray.forEach((obj) => {
+            console.log(obj)
+        }
+        )
 
         //pulling rgb colors from current color pallete
         var sideBar = localStorage.getItem('currentColor0');
