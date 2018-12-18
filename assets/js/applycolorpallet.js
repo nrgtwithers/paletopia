@@ -7,12 +7,11 @@ let applyColorPallet = function () {
        for (i=0;i<10;i++){
            let newObj = {}
            newObj.color = localStorage.getItem(`newColor${i}`)
+           console.log(newObj.color)
            newObj.brightness = getBrightness(newObj.color)
            colorsBrightnessObjectArray.push(newObj)
        }
-       
        console.log(colorsBrightnessObjectArray)
-       
        
         //pulling rgb colors from current color pallete
         var sideBar = localStorage.getItem('newColor0');

@@ -11,7 +11,11 @@ let regExpred = /\((\d+),/
 let regExpgreen =/,(\d+),/
 let regExpblue =/,(\d+)\)/
 
-return "#" + componentToHex(parseInt(regExpred.exec(rgbColor)[1])) + componentToHex(parseInt(regExpgreen.exec(rgbColor)[1])) + componentToHex(parseInt(regExpblue.exec(rgbColor)[1]));
+let red = parseInt(regExpred.exec(rgbColor)[1])
+let green = parseInt(regExpgreen.exec(rgbColor)[1])
+let blue = parseInt(regExpblue.exec(rgbColor)[1])
+
+return "#" + componentToHex(red) + componentToHex(green) + componentToHex(blue);
 }
 
 //test
