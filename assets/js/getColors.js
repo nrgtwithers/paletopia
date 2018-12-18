@@ -19,6 +19,9 @@ var getColors = (url) => {
     //doing stuff with the response once the response is loaded
     visionResponse.onload = function () {
 
+
+        console.log(visionResponse)
+
         //putting colors from visionResponse into an array colorsArray
         colorsArray = JSON.parse(visionResponse.response).responses[0].imagePropertiesAnnotation.dominantColors.colors
 
