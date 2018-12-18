@@ -41,8 +41,9 @@ var getColors = (url) => {
 
             let hexColor = rgbToHex(rgbColor)
             let colorName = ntc.name(hexColor)
+            let brightness = getBrightness(color.red, color.green, color.blue)
 
-            $("#color-info").append($("<p>").text(`Color${i}: ${hexColor} ${rgbColor} ${colorName[1]}`))
+            $("#color-info").append($("<p>").text(`Color${i}: ${hexColor} ${rgbColor} ${colorName[1]} brightness:${brightness}`))
 
             //storing each color from the array into local storage
             localStorage.setItem(`newColor${i}`, rgbColor)
