@@ -1,3 +1,43 @@
+
+// takes rgbColor, outputs brightness
+var getBrightness = (rgbColor) => {
+
+    let regExpred = /\((\d+),/
+    let regExpgreen = /,(\d+),/
+    let regExpblue = /,(\d+)\)/
+
+    let red = parseInt(regExpred.exec(rgbColor)[1])
+    let green = parseInt(regExpgreen.exec(rgbColor)[1])
+    let blue = parseInt(regExpblue.exec(rgbColor)[1])
+
+    return ((red * 299 + green * 587 + blue * 114) / 1000)
+}
+
+
+//this function is a dependency of rgbToHex()
+function componentToHex(c) {
+    var hex = c.toString(16);
+    return hex.length == 1 ? "0" + hex : hex;
+}
+
+//takes rgbColor, outputs hex code
+function rgbToHex(rgbColor) {
+
+let regExpred = /\((\d+),/
+let regExpgreen =/,(\d+),/
+let regExpblue =/,(\d+)\)/
+
+let red = parseInt(regExpred.exec(rgbColor)[1])
+let green = parseInt(regExpgreen.exec(rgbColor)[1])
+let blue = parseInt(regExpblue.exec(rgbColor)[1])
+
+return "#" + componentToHex(red) + componentToHex(green) + componentToHex(blue);
+}
+
+//test
+//console.log( rgbToHex("rgb(0,51,255)")); // #0033ff
+
+
 /*
 
 +-----------------------------------------------------------------+
@@ -1683,4 +1723,4 @@ var ntc = {
   
   }
   
-  ntc.init();
+//  ntc.init();
