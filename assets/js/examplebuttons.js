@@ -30,6 +30,10 @@ exampleUrlsArr = [
         url:"https://images.unsplash.com/photo-1526452765549-517b13adb4f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
         name:"calico"
     },
+    {
+        url:"http://www.accudata.com/smartdata/wp-content/uploads/2013/10/img-7-1.jpg",
+        name:"city"
+    },
 ]
 
 $("#example-buttons").append($("<p>").text("Try one of these."))
