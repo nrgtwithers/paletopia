@@ -34,32 +34,15 @@ let applyColorPallet = function () {
         lightest - sortedColors[0].color
         */
 
-
-
-
-
-        //pulling rgb colors from current color pallete
-        var sideBar = localStorage.getItem('currentColor0');
-        var sideBarHeader = localStorage.getItem('currentColor3');
-        var sideBarTag = localStorage.getItem('currentColor4')
-        var header = localStorage.getItem('currentColor6')
-        var subheader = localStorage.getItem('currentColor1')
-        var footer = localStorage.getItem('currentColor8')
-        var button = localStorage.getItem('currentColor2')
-        var buttonText = localStorage.getItem('currentColor9')
-        var button2 = localStorage.getItem('currentColor5')
-        var buttonText2 = localStorage.getItem('currentColor7')
-
-
         //setting css color properties to colors from the current color pallete 
-        $('.sidebar').css('background-color', sortedColors[5].color);
+       // $('.sidebar').css(background-color, sortedColors[5].color);
+        $('.sidebar').animate({backgroundColor: sortedColors[5].color}, 1000);
         $('.sidebar').css('color', sortedColors[1].color);
         $('.brand-tagline').css('color', sortedColors[9].color);
         $('.typewriter h1').css('color', 'red');
         $('footer').css('color', sortedColors[6].color);
         $('.color-button').css('background-color', sortedColors[8].color);
         $('.color-button').css('color', sortedColors[4].color);
-   
         $('.example-buttons').css('background-color', sortedColors[7].color);
         $('.example-buttons').css('color', sortedColors[3].color);
         $('.subheader').css('color', 'red');
@@ -67,16 +50,15 @@ let applyColorPallet = function () {
         $('#example-buttons').css('color', sortedColors[5].color);
         $("input").css('background-color', sortedColors[0].color)
         $("input").css('color', sortedColors[2].color)
-        //$("input::placeholder").css('color', 'red')
-        
         $("a").css('color', sortedColors[7].color)
-
+        
+        //$("input::placeholder").css('color', 'red')
         // $("<button>").hover(function(){
         //     $(this).css("background-color", sideBarTag);
         //     },
 
         //animating background colors
         $("html").animate()
-        $("html").animate({ backgroundColor: sortedColors[5].color}, 1000).delay(150).animate({ backgroundColor: sortedColors[0].color }, 1500);
+        $("html").animate({ backgroundColor: sortedColors[0].color }, 1000);
     })
 }
