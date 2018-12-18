@@ -27,6 +27,7 @@ var getColors = (url) => {
 
         //empty display used to show colors
         $("#display").empty()
+        $("#color-info").empty()
 
         //iterating over array of colors colorsArray
         for (i = 0; i < colorsArray.length; i++) {
@@ -36,7 +37,12 @@ var getColors = (url) => {
             let rgbColor = `rgb(${color.red},${color.green},${color.blue})`
 
             //displaying css formatted color in the DOM
-            $("#display").append($("<div>").text('').css(`background-color`, rgbColor).css('min-height', '200px').css('max-width','10%').css('min-width','10%').css('float','left'))
+            $("#display").append($("<div>").text(``).css(`background-color`, rgbColor).css('min-height', '200px').css('max-width','10%').css('min-width','10%').css('float','left'))
+
+            let hexColor = rgbToHex(rgbColor)
+            let colorName = ntc.name(hexColor)
+
+            $("#color-info").append($("<p>").text(`Color${i}: ${hexColor} ${rgbColor} ${colorName[1]}`))
 
             //storing each color from the array into local storage
             localStorage.setItem(`newColor${i}`, rgbColor)
