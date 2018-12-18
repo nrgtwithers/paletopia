@@ -13,7 +13,7 @@ $("#saveButton").on("click", function () {
         //storing each color from the array into local storage
         localStorage.setItem(`savedColor${i}`, rgbColor)
 
-        let currentUrl = localStorage.getItem('newUrl')
+        let currentUrl = localStorage.getItem('currentUrl')
         localStorage.setItem('savedUrl', currentUrl)
     }
 })

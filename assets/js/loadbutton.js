@@ -17,7 +17,7 @@ $("#loadButton").on("click", function () {
     for (i = 0; i < 10; i++) {
         let color = localStorage.getItem(`savedColor${i}`)
         //putting colors in storage as current color pallete
-        localStorage.setItem(`newColor${i}`, color)
+        localStorage.setItem(`currentColor${i}`, color)
 
         //reformat each color to css format -- rgb(12,50,39) 
         let rgbColor = color
@@ -35,10 +35,10 @@ $("#loadButton").on("click", function () {
  //$("#color-info").append($("<p>").text(`Color${i}: ${hexColor} ${rgbColor} ${colorName[1]}`))
 
  //storing each color from the array into local storage
- localStorage.setItem(`newColor${i}`, rgbColor)
- localStorage.setItem(`newColor${i}hex`, hexColor)
- localStorage.setItem(`newColor${i}name`, colorName[1])
- localStorage.setItem(`newColor${i}brightness`, getBrightness(rgbColor))
+ localStorage.setItem(`currentColor${i}`, rgbColor)
+ localStorage.setItem(`currentColor${i}hex`, hexColor)
+ localStorage.setItem(`currentColor${i}name`, colorName[1])
+ localStorage.setItem(`currentColor${i}brightness`, brightness)
 }
 $("#display").append($("<div>").text('click color pallete to display information'))
 applyColorPallet()

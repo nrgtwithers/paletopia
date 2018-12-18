@@ -30,8 +30,6 @@ exampleUrlsArr = [
         url:"https://images.unsplash.com/photo-1526452765549-517b13adb4f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
         name:"calico"
     },
-    
-    
 ]
 
 $("#example-buttons").append($("<p>").text("Try one of these."))
@@ -41,7 +39,7 @@ exampleUrlsArr.forEach((urlname) => {
     let button = $("<button>").text(urlname.name)
     button.on("click", () => {
         event.preventDefault()
-        localStorage.setItem("newUrl", urlname.url)
+        localStorage.setItem("currentUrl", urlname.url)
         getColors(urlname.url)
     })
     button.addClass("example-buttons")

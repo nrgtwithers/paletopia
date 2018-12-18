@@ -23,7 +23,7 @@ var getColors = (url) => {
         colorsArray = JSON.parse(visionResponse.response).responses[0].imagePropertiesAnnotation.dominantColors.colors
 
         //storing colorsArray in local storage
-        localStorage.setItem("newColorsArray", JSON.stringify(colorsArray))
+        localStorage.setItem("currentColorsArray", JSON.stringify(colorsArray))
 
         //empty display used to show colors
         $("#display").empty()
@@ -50,10 +50,10 @@ var getColors = (url) => {
             //$("#color-info").append($("<p>").text(`Color${i}: ${hexColor} ${rgbColor} ${colorName[1]}`))
 
             //storing each color from the array into local storage
-            localStorage.setItem(`newColor${i}`, rgbColor)
-            localStorage.setItem(`newColor${i}hex`, hexColor)
-            localStorage.setItem(`newColor${i}name`, colorName[1])
-            localStorage.setItem(`newColor${i}brightness`, getBrightness(rgbColor))
+            localStorage.setItem(`currentColor${i}`, rgbColor)
+            localStorage.setItem(`currentColor${i}hex`, hexColor)
+            localStorage.setItem(`currentColor${i}name`, colorName[1])
+            localStorage.setItem(`currentColor${i}brightness`, getBrightness(rgbColor))
         }
         $("#display").append($("<div>").text('click color pallete to display information'))
         applyColorPallet()

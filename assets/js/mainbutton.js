@@ -7,7 +7,7 @@ $("#submitButton").on("click", function () {
     var userInput = $("#userInput").val()
 
     //storing current img url in local storage
-    localStorage.setItem("newUrl", userInput)
+    localStorage.setItem("currentUrl", userInput)
 
     //clear displays
     $("#current-image").empty()
