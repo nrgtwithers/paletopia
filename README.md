@@ -10,11 +10,14 @@ This is the first project for the November 2018 - February 2019 George Washingto
 
 [The instructions for this project is here.](project_instructions.pdf)
 
-### What needs to be done
 
-[ ] Polish Layout    
-[ ] Display color pallete currently storage in local storage  
-[ ] 
+## Issues
+
+[ ] The page no longer looks good on phone after the palette was moved to the side  
+[ ] brightness of text and background is now always compatible  
+[ ] side bar, image and color pallete should have an animated entrance
+
+
 
 ## Development Log
 
@@ -32,3 +35,11 @@ We decided to make a web app where you put in an image and get out a color palle
 #### Saturday, December 15th, 2018
 
 Added some example images that can easily be clicked to test the color pallete generator and display. Colors are now displayed under the image. 
+
+#### Monday, December 17th, 2018
+
+Fixed delay. Rearranged layout. Good looking example photos. Some animaton.
+
+#### Tuesday, December 18th, 2018
+
+Started working on brightness. Still improving layout.
