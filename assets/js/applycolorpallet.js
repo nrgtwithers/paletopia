@@ -67,6 +67,7 @@ let applyColorPallet = function () {
         $('#example-buttons').css('color', sortedColors[5].color);
         $("#userInput").css('background-color', sortedColors[0].color)
         $("#userInput").css('color', sortedColors[2].color)
+        $("a").css('color', sortedColors[7].color)
         // $("<button>").hover(function(){
         //     $(this).css("background-color", sideBarTag);
         //     },
