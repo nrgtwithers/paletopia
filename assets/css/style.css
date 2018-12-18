@@ -122,6 +122,10 @@ html, body {
     margin-bottom: 0px;
 }
 
+.palette{
+    margin-right: 0px;
+}
+
 .brand-title,
 .brand-tagline {
     margin: 0;
