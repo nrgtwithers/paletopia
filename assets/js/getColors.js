@@ -37,7 +37,10 @@ var getColors = (url) => {
             let rgbColor = `rgb(${color.red},${color.green},${color.blue})`
 
             //displaying css formatted color in the DOM
-            $("#display").append($("<div>").text(``).css(`background-color`, rgbColor).css('min-height', '200px').css('max-width','10%').css('min-width','10%').css('float','left'))
+            $("#display").append($("<div>").text(rgbColor).css(`background-color`, rgbColor).css('min-height', '100px').css('float','left'))
+
+            // //displaying css formatted color in the DOM
+            // $("#display").append($("<div>").text(``).css(`background-color`, rgbColor).css('min-height', '200px').css('max-width','10%').css('min-width','10%').css('float','left'))
 
             let hexColor = rgbToHex(rgbColor)
             let colorName = ntc.name(hexColor)
