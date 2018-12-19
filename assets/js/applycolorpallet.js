@@ -61,7 +61,8 @@ let applyColorPallet = function () {
         $("input").css('background-color', sortedColors[0].color)
         $("input").css('color', sortedColors[2].color)
         $("a").css('color', sortedColors[7].color)
-
+        $("#display").addClass('animated rollIn');
+        $("img").css('animation','jackInTheBox 2s forwards');
         //$("input::placeholder").css('color', 'red')
         // $("<button>").hover(function(){
         //     $(this).css("background-color", sideBarTag);

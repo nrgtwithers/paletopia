@@ -316,7 +316,7 @@ button:hover {
 }
 .red{
     background-color: red;
-    border: 3px solid black;
-    width: 70px;
-    height: 70px;
-    font-size: 10px}
+    /* border: 3px solid black; */
+    width: 90px;
+    height: 35px;
+    font-size: 15px}
