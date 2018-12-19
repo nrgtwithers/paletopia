@@ -51,11 +51,6 @@ let applyColorPallet = function () {
         $('.example-buttons').css('color', sortedColors[3].color);
         $('#directions').css('color', sortedColors[5].color);
         $('#example-buttons').css('color', sortedColors[5].color);
-        $('.example-buttons').hover(function() {
-            $(this).addClass('red');
-        }, function() {
-            $(this).removeClass('red');
-        });
         $("input").css('background-color', sortedColors[0].color)
         $("input").css('color', sortedColors[2].color)
         $("a").css('color', sortedColors[7].color)
