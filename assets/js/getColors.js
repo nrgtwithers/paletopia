@@ -49,3 +49,5 @@ var getColors = (url) => {
         applyColorPallet()
     }
 }
+
+getColors('https://picsum.photos/750/550/?random')
