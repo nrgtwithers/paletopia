@@ -39,5 +39,5 @@ $("#loadButton").on("click", function () {
  localStorage.setItem(`currentColor${i}brightness`, brightness)
 }
 applyColorPallet()
-$("#display").append($("<div>").text('click color pallete to display information'))
+//$("#display").append($("<div>").text('click color pallete to display information'))
 })

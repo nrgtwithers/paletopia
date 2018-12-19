@@ -34,6 +34,10 @@ exampleUrlsArr = [
         url:"http://www.accudata.com/smartdata/wp-content/uploads/2013/10/img-7-1.jpg",
         name:"city"
     },
+    {
+        url:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/402px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
+        name:"monalisa"
+    }
 ]
 
 $("#example-buttons").append($("<p>").text("Try one of these."))

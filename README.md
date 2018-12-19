@@ -42,4 +42,4 @@ Fixed delay. Rearranged layout. Good looking example photos. Some animaton.
 
 #### Tuesday, December 18th, 2018
 
-Started working on brightness. Still improving layout.
+Improved Layout. Assigned colors with regard to brightness so all generated styles are readable. 
