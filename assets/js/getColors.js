@@ -5,6 +5,11 @@ var getColors = (url) => {
     $("#current-image").empty()
     $("#display").empty()
 
+
+     // <span class="rounded-img" style="background: url(img/thumb1.jpg) no-repeat center center;">
+	// 	<img src="img/thumb1.jpg" style="opacity: 0;" /> 
+	//	</span>
+
     //appending request image to display div
     var img = $("<img>").attr("src", url).css("max-width", "100%")
     $("#current-image").append(img)
