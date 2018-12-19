@@ -9,7 +9,7 @@ let applyColorPallet = function () {
             let newObj = {}
             newObj.color = localStorage.getItem(`currentColor${i}`)
 
-            //displaying css formatted color in the DOM
+            //displaying css formatted color in the color pallete to the right of image
             $("#display").append($("<div>").text('').css(`background-color`, newObj.color).css('min-height', '75px').attr('id', `colorDisplay${i}`))
 
             newObj.brightness = localStorage.getItem(`currentColor${i}brightness`)

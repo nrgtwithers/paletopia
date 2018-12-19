@@ -51,4 +51,4 @@ var getColors = (url) => {
     }
 }
 
-getColors('https://picsum.photos/750/550/?random')
+//getColors('https://picsum.photos/750/550/?random')
