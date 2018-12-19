@@ -1,7 +1,4 @@
 $("#saveButton").on("click", function () {
-    $("#display-saved").empty()
-
-    $("#display-saved").append($("<h1>").text("Saved"))
 
     for (i = 0; i < colorsArray.length; i++) {
         let color = colorsArray[i].color
