@@ -314,3 +314,8 @@ button:hover {
 #feed-top{
     min-height:12em
 }
+.red{
+    background-color: red;
+    border: 3px solid black;
+    width: 150px;
+    height: 150px;}

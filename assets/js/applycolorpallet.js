@@ -42,6 +42,7 @@ let applyColorPallet = function () {
 
         //setting css color properties to colors from the current color pallete 
         // $('.sidebar').css(background-color, sortedColors[5].color);
+        $('.brand-title').animate(function(now,fx){$(this).css('-webkit-transform',rotate('+now+deg)'))});
         $('.sidebar').animate({ backgroundColor: sortedColors[5].color }, 300);
         $('.sidebar').animate({ color: sortedColors[1].color }, 300);
         $('.brand-tagline').css('color', sortedColors[9].color);
@@ -52,6 +53,11 @@ let applyColorPallet = function () {
         $('.example-buttons').css('color', sortedColors[3].color);
         $('#directions').css('color', sortedColors[5].color);
         $('#example-buttons').css('color', sortedColors[5].color);
+        $('.example-buttons').hover(function() {
+            $(this).addClass('red');
+        }, function() {
+            $(this).removeClass('red');
+        });
         $("input").css('background-color', sortedColors[0].color)
         $("input").css('color', sortedColors[2].color)
         $("a").css('color', sortedColors[7].color)
