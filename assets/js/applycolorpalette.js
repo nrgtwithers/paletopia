@@ -12,15 +12,19 @@ let applyColorPallet = function () {
             //displaying css formatted color in the color pallete to the right of image
             let newDiv = ($("<div>").text(' ').css(`background-color`, newObj.color).css('min-height', '75px').attr('id', `colorDisplay${i}`))
 
-            newDiv.on("click", () => {
-                displayPaletteInfo()
-            })
-
             $("#display").append(newDiv)
 
             newObj.brightness = localStorage.getItem(`currentColor${i}brightness`)
             colorsBrightnessArray.push(newObj)
         }
+
+        let displayInfoButton = $('<button>').text("click to display palette info").addClass('color-button').attr('width','100%'    )
+
+        displayInfoButton.on("click", () => {
+            displayPaletteInfo()
+        })
+
+        $("#display").append(displayInfoButton)
 
         let sortedColors = colorsBrightnessArray.sort(function (a, b) {
             return b.brightness - a.brightness;
