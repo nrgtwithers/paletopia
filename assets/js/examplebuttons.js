@@ -48,7 +48,7 @@ exampleUrlsArr = [
 $("#example-buttons").append($("<p>").text("Try one of these."))
 
 exampleUrlsArr.forEach((urlname) => {
-    let button = $("<button>").text(urlname.name)
+    let button = $("<button>").addClass('pure-u-1-5').text(urlname.name)
     button.on("click", () => {
         event.preventDefault()
         localStorage.setItem("currentUrl", urlname.url)
