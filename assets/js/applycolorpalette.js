@@ -13,7 +13,7 @@ let applyColorPallet = function () {
             let newDiv = ($("<div>").text('').css(`background-color`, newObj.color).css('min-height', '75px').attr('id', `colorDisplay${i}`))
 
             newDiv.on("click", () => {
-                console.log("BAM")
+                displayPaletteInfo()
             })
 
             $("#display").append(newDiv)
