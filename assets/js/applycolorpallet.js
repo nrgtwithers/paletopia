@@ -54,7 +54,7 @@ let applyColorPallet = function () {
         $("input").css('background-color', sortedColors[0].color)
         $("input").css('color', sortedColors[2].color)
         $("a").css('color', sortedColors[7].color)
-        $("#display").addClass('animated 3s fadeIn');
+        // $("#display").addClass('animated 3s fadeIn');
         // $("img").addClass('')
         // $("img").addClass('animated 1s fadeIn');
 
