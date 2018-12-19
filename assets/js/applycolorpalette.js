@@ -10,7 +10,7 @@ let applyColorPallet = function () {
             newObj.color = localStorage.getItem(`currentColor${i}`)
 
             //displaying css formatted color in the color pallete to the right of image
-            let newDiv = ($("<div>").text('').css(`background-color`, newObj.color).css('min-height', '75px').attr('id', `colorDisplay${i}`))
+            let newDiv = ($("<div>").text(' ').css(`background-color`, newObj.color).css('min-height', '75px').attr('id', `colorDisplay${i}`))
 
             newDiv.on("click", () => {
                 displayPaletteInfo()
@@ -26,8 +26,11 @@ let applyColorPallet = function () {
             return b.brightness - a.brightness;
         })
 
+        localStorage.setItem(`currentColorLight`, sortedColors[0].color)
+        localStorage.setItem(`currentColorDark`, sortedColors[9].color)
+
         sortedColors.forEach((obj) => {
-            console.log(obj)
+        //   console.log(obj)
         }
         )
 

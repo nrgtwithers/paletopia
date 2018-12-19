@@ -40,6 +40,7 @@ var getColors = (url) => {
             let colorName = ntc.name(hexColor)
             let brightness = getBrightness(rgbColor)
 
+          
             //storing each color from the array into local storage
             localStorage.setItem(`currentColor${i}`, rgbColor)
             localStorage.setItem(`currentColor${i}hex`, hexColor)

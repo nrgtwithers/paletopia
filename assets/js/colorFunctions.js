@@ -1723,4 +1723,4 @@ var ntc = {
   
   }
   
-//  ntc.init();
+ ntc.init();
