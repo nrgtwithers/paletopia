@@ -8,7 +8,8 @@ var getColors = (url) => {
     //appending request image to display div
     var img = $("<img>").attr("src", url).css("max-width", "100%")
     $("#current-image").append(img)
-    $("#display").append($("<h1>")).text("loading...")
+    $("#display").append($("<h1>")).text("loading...");
+    $("img").addClass('animated 3s fadeIn');
 
     //api request to google vision. This returns the response as visionResponse
     var visionOption = JSON.stringify({ "requests": [{ "image": { "source": { "imageUri": url } }, "features": [{ "type": 'IMAGE_PROPERTIES', "maxResults": 5 }] }] });
@@ -28,7 +29,7 @@ var getColors = (url) => {
         //empty display used to show colors
         $("#display").empty()
         $("#color-info").empty()
-
+        
         //iterating over array of colors colorsArray
         for (i = 0; i < colorsArray.length; i++) {
             let color = colorsArray[i].color
