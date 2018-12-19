@@ -5,64 +5,50 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
-    <title>GWU - Group Project</title>
+    <title>Palettopia</title>
 
-    <!-- our css-->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100" rel="stylesheet">
-
-    
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
-     <!--[if lte IE 8]-->
-            <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
-            <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
-            <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
-            <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <!--[if lte IE 8]-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
 
 </head>
 
 <body id="body">
-
     <div class="element">
         <div id="layout" class="pure-g">
+
             <div class="sidebar pure-u-1 pure-u-sm-1-4">
                 <div class="header">
                     <h1 class="brand-title">PALETTOPIA</h1>
                     <h2 class="brand-tagline">Generate color palette from images</h2>
-                    <p style = "align-content: center">Instantly generate a complete color palette from an image of your choice. Automatically adjust the background of the entire website to blend with your image harmoniously.</p>
+                    <p style="align-content: center">Style this page with colors from any image. Enter in an image url
+                        or try an example image to automatically generate a color palette and apply colors to every
+                        element on this page.</p>
                     <button id="saveButton" type="save" class="pure-button pure-button-active color-button">Save</button>
                     <button id="loadButton" type="save" class="pure-button pure-button-active color-button">Load</button>
                     <br>
                     <br>
-                    <footer style = "font-size:50%">Technologies used: Pure CSS, Google Vision, JQueryUI, Animate CSS</footer>
-                     <!-- <hr>
-                    <p><strong>This is where the description of project.</strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu urna orci. Nam sit amet lorem nisi. Vestibulum ornare eget leo et vestibulum. Quisque neque lacus, sollicitudin eu consequat eu, bibendum vitae ante. Sed pharetra ex at justo volutpat auctor. Integer tempus tincidunt justo ac sollicitudin. Quisque dolor neque, tincidunt ut tortor sit amet, rutrum suscipit nunc.</p>
-                    <hr> -->
+                    <footer style="font-size:50%">Technologies used: Google Vision API, JQueryUI, Pure CSS, Animate CSS</footer>
                     <a href="https://github.com/IanWalston/ImageAnalysis"> Project's Github</a>
-                    
                 </div>
             </div>
 
             <div class=" content pure-u-1 pure-u-sm-1-2">
                 <form class="pure-form">
                     <fieldset>
-                        <!-- <legend>
-                            <div class="typewriter">
-                                <h1>IMAGE COLOR ANALYSIS</h1>
-                            </div>
-                        </legend> -->
                         <span>
-                                <p id="directions" class="animated infinite bounce">
-                                    Paste in an image url to generate and apply a color pallete.
-                                </p>
-                            <!-- <p>
+                            <p id="directions" class="animated infinite bounce">
                                 Paste in an image url to generate and apply a color pallete.
-                            </p> -->
+                            </p>
                             <span>
                                 <input id="userInput" type="url" placeholder="Image URL">
                             </span>
@@ -75,33 +61,17 @@
                 </form>
                 <div id="current-image"></div>
             </div>
-                <div class="palette pure-u-1 pure-u-sm-1-4">
-                        
-                        <div id="display"></div>
-                        
+
+            <div class="palette pure-u-1 pure-u-sm-1-4">
+                <div id="display"></div>
                 <div>
-
-
-                    <!-- A wrapper for all content -->
-                    <!-- <div class="posts">
-                        <h1 class="content-subhead">Color Palette</h1>
-                        <div id="current-image"></div>
-                        <div id="display"></div>
-                        <div id="display-saved"></div> -->
-                        
-                    </div>
-                    <br><br><br>
-                    
-                    <div id="color-info"></div> 
-                    <br><br><br>
-                    <footer id="sticky">
-                        <!-- <div class="pure-menu pure-menu-horizontal"> -->
-                            Copyright &copy; 2018
-                        <!-- </div> -->
-                    </footer>
                 </div>
+                <footer id="sticky">
+                    Copyright &copy; 2018
+                </footer>
             </div>
         </div>
+    </div>
     </div>
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

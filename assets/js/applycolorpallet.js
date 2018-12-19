@@ -12,8 +12,6 @@ let applyColorPallet = function () {
             //displaying css formatted color in the DOM
             $("#display").append($("<div>").text('').css(`background-color`, newObj.color).css('min-height', '75px').attr('id', `colorDisplay${i}`))
 
-
-
             newObj.brightness = localStorage.getItem(`currentColor${i}brightness`)
             colorsBrightnessArray.push(newObj)
         }
