@@ -13,9 +13,7 @@ This is the first project for the November 2018 - February 2019 George Washingto
 
 ## Issues
 
-[ ] The page no longer looks good on phone after the palette was moved to the side  
-[ ] brightness of text and background is now always compatible  
-[ ] side bar, image and color pallete should have an animated entrance
+[ ] make the front page look better
 
 
 
@@ -42,4 +40,9 @@ Fixed delay. Rearranged layout. Good looking example photos. Some animaton.
 
 #### Tuesday, December 18th, 2018
 
-Improved Layout. Assigned colors with regard to brightness so all generated styles are readable. 
+Improved Layout. Assigned colors with regard to brightness so all generated styles are readable. Fixed responsiveness issue for phones
+
+####Wednesday, December 19th, 2018
+
+Clicking on the palette now displays information about each color. 
+

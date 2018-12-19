@@ -2,10 +2,8 @@
 let displayPaletteInfo = () => {
     for (let i = 0; i < 10; i++) {
 
-
         let div = $(`#colorDisplay${i}`)
         div.empty()
-
 
         if (!div.hasClass('displayon')) {
             let rgbColor = localStorage.getItem(`currentColor${i}`)
