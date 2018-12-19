@@ -45,7 +45,7 @@ exampleUrlsArr = [
 ]
 
 
-$("#example-buttons").append($("<p>").text("Try one of these."))
+$("#example-buttons").append($("<p>").text("Or try one of these."))
 
 exampleUrlsArr.forEach((urlname) => {
     let button = $("<button>").addClass('pure-u-1-5').text(urlname.name)
