@@ -59,13 +59,9 @@ let applyColorPallet = function () {
         $("input").css('background-color', sortedColors[0].color)
         $("input").css('color', sortedColors[2].color)
         $("a").css('color', sortedColors[7].color)
-        $("#display").addClass()
-        $("#display").addClass('animated slideInLeft');
-        $("img").css('animation','slideInLeft 1s forwards');
-        //$("input::placeholder").css('color', 'red')
-        // $("<button>").hover(function(){
-        //     $(this).css("background-color", sideBarTag);
-        //     },
+        $("#display").addClass('animated 3s fadeIn');
+        // $("img").addClass('')
+        // $("img").addClass('animated 1s fadeIn');
 
         //animating background colors
         $("html").animate()
