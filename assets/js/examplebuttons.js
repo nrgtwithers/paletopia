@@ -37,6 +37,10 @@ exampleUrlsArr = [
     {
         url:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/402px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
         name:"monalisa"
+    },
+    {
+        url:"https://thumbs-prod.si-cdn.com/1eeRoJjAO2R7690lA67-uGUIQ3c=/800x600/filters:no_upscale()/https://public-media.si-cdn.com/filer/The-Creation-of-Adam-Michelangelo-631.jpg",
+        name:"sisteen"
     }
 ]
 

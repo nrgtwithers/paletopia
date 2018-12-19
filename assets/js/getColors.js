@@ -38,7 +38,6 @@ var getColors = (url) => {
             let hexColor = rgbToHex(rgbColor)
             let colorName = ntc.name(hexColor)
             let brightness = getBrightness(rgbColor)
-
             //display information on color below the pallete
             //$("#color-info").append($("<p>").text(`Color${i}: ${hexColor} ${rgbColor} ${colorName[1]}`))
 
