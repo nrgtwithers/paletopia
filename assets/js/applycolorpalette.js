@@ -9,8 +9,14 @@ let applyColorPallet = function () {
             let newObj = {}
             newObj.color = localStorage.getItem(`currentColor${i}`)
 
-            //displaying css formatted color in the DOM
-            $("#display").append($("<div>").text('').css(`background-color`, newObj.color).css('min-height', '75px').attr('id', `colorDisplay${i}`))
+            //displaying css formatted color in the color pallete to the right of image
+            let newDiv = ($("<div>").text('').css(`background-color`, newObj.color).css('min-height', '75px').attr('id', `colorDisplay${i}`))
+
+            newDiv.on("click", () => {
+                console.log("BAM")
+            })
+
+            $("#display").append(newDiv)
 
             newObj.brightness = localStorage.getItem(`currentColor${i}brightness`)
             colorsBrightnessArray.push(newObj)
