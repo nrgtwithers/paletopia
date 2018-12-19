@@ -317,5 +317,6 @@ button:hover {
 .red{
     background-color: red;
     border: 3px solid black;
-    width: 150px;
-    height: 150px;}
+    width: 70px;
+    height: 70px;
+    font-size: 10px}
