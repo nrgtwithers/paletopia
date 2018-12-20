@@ -60,7 +60,7 @@ let applyColorPallet = function () {
         $('.sidebar').animate({ backgroundColor: sortedColors[5].color }, 300);
         $('.sidebar').animate({ color: sortedColors[1].color }, 300);
         $('.brand-tagline').css('color', sortedColors[9].color);
-        $('footer').css('color', sortedColors[6].color);
+        $('#contact-us').css('color', sortedColors[1].color);
         $('.color-button').css('background-color', sortedColors[8].color);
         $('.color-button').css('color', sortedColors[4].color);
         $('.example-buttons').css('background-color', sortedColors[7].color);
