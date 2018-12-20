@@ -8,8 +8,8 @@ var getColors = (url) => {
 
 
     //appending request image to display div
-    var img = $("<img>").attr("src", url).css("max-width", "100%")
-    $("#current-image").append(img)
+    var img = $("<img>").attr("src", url).css("max-width", "100%").css("border-radius", "10px");
+    $("#current-image").append(img);
     $("#display").append($("<h1>")).text("loading...");
     $("img").addClass('animated 5s fadeIn');
 
