@@ -6,14 +6,14 @@
 
 This is the first project for the November 2018 - February 2019 George Washington University Full Time Web Development Course in Arlington. 
 
-[The deployed website can be found here.](https://ianwalston.github.io/ImageAnalysis/)
+[The deployed website can be found here.](https://ianwalston.github.io/paletopia/)
 
 [The instructions for this project is here.](project_instructions.pdf)
 
 
 ## Issues
 
-[ ] make the front page look better
+[ ] make the front page look better  
 
 
 

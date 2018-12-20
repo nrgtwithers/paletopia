@@ -5,6 +5,8 @@ var getColors = (url) => {
     $("#current-image").empty()
     $("#display").empty()
 
+
+
     //appending request image to display div
     var img = $("<img>").attr("src", url).css("max-width", "100%")
     $("#current-image").append(img)
