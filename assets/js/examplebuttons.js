@@ -53,6 +53,7 @@ exampleUrlsArr.forEach((urlname) => {
         event.preventDefault()
         localStorage.setItem("currentUrl", urlname.url)
         getColors(urlname.url)
+       
     })
     button.addClass("example-buttons")
     $("#example-buttons").append(button)

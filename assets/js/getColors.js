@@ -19,7 +19,7 @@ var getColors = (url) => {
     var visionResponse = new XMLHttpRequest;
     visionResponse.open("POST", "https://vision.googleapis.com/v1/images:annotate?key=AIzaSyA9EHeI2lrYJnjfEMhI0rU-J8yyfAOSOAs", !0);
     visionResponse.send(visionOption)
-
+console.log(visionResponse);
     //doing stuff with the response once the response is loaded
     visionResponse.onload = function () {
 

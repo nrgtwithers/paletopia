@@ -19,7 +19,7 @@ let applyColorPallet = function () {
         }
 
         //make button for displaying info on pallete for each color
-        let displayInfoButton = $('<button>').text("click to display palette info").addClass('color-button').attr('width', '100%')
+        let displayInfoButton = $('<button>').text("click to display palette info").addClass('color-button pure-u-5-5').css('min-height', '64px');
 
         displayInfoButton.on("click", () => {
             displayPaletteInfo()
