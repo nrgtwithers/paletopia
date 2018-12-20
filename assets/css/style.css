@@ -29,12 +29,11 @@ html, body {
     justify-content: center;
     height: 100%;
     width: 100%;
-    animation: transition 2s forwards;
+    animation: gradual 3s forwards;
     margin-top: 0px;
     margin:0; /*gets rid of white space around body*/
-    /* margin-top:16px; */
-    height:150vh; /*you can let your content define it's height*/
-    position: relative; /*REQUIRED Sets up positioning for your footer*/
+    height:150vh;
+    position: relative; 
    } 
 
 /* Background Animation */
@@ -46,14 +45,15 @@ html, body {
     top:0;
   }
    
-   @keyframes transition {
+   @keyframes gradual {
     0% {
       background-color:#2A3132;
     }
     100% {
-      background-color: #FFFFFF 1s forwards;
+      background-color: #FFFFFF 3s forwards;
     }
   }  
+
 /*Animate.css*/
 #directions {
     font-size: 18px;
@@ -219,9 +219,6 @@ button:hover {
     font-size: 18px;
     animation: fadeIn 4s forwards;
 }
- /* p{
-    color:#763626;;
-}  */
 
 #loadButton{
     border-radius: 2px;
@@ -240,21 +237,6 @@ button:hover {
     background-color: #90AFC5;
     color: #2A3132;
 }
-
-#sticky {
-    padding: 1em 0;
-    width:100%;
-    height:44px;
-    padding-top:20px;
-    background:transparent;
-    color:darkgrey;
-    font-weight:bold;
-    font-size:15px;
-    text-align:center;
-    position: fixed; /*Here's what sticks it*/
-    bottom:0;          /*to the bottom of the body/page*/
-    left:0;            /*and to the left of the body/page.*/
-  }
 
 .footer a {
     color: #ccc;
@@ -291,26 +273,9 @@ button:hover {
     margin-bottom: -5px;
 }
 
-/* #sidebar{
-    background-color:#a4c9e2;
-    width:20%;
-    height: 100%;
-    float: left;
-}     */
 #feed-top{
     min-height:12em
 }
-.red{
-    background-color: red;
-    /* border: 3px solid black; */
-    width: 90px;
-    height: 35px;
-    font-size: 15px}
-/* 
-#displayInfoButton{
-    background-image: linear-gradient(to bottom right, red, yellow, blue);
-} */
-
 
 
 
