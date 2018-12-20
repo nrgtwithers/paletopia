@@ -18,7 +18,8 @@ let applyColorPallet = function () {
             colorsBrightnessArray.push(newObj)
         }
 
-        let displayInfoButton = $('<button>').text("click to display palette info").addClass('color-button').attr('width','100%'    )
+        //make button for displaying info on pallete for each color
+        let displayInfoButton = $('<button>').text("click to display palette info").addClass('color-button').attr('width', '100%')
 
         displayInfoButton.on("click", () => {
             displayPaletteInfo()
@@ -30,11 +31,14 @@ let applyColorPallet = function () {
             return b.brightness - a.brightness;
         })
 
+        //make border around palette
+        $(".palette").css('border-style', 'solid').css('border-color', sortedColors[2].color)
+
         localStorage.setItem(`currentColorLight`, sortedColors[0].color)
         localStorage.setItem(`currentColorDark`, sortedColors[9].color)
 
         sortedColors.forEach((obj) => {
-        //   console.log(obj)
+            //   console.log(obj)
         }
         )
 
@@ -53,7 +57,7 @@ let applyColorPallet = function () {
 
         //setting css color properties to colors from the current color pallete 
         // $('.sidebar').css(background-color, sortedColors[5].color);
-        $('.brand-title').animate(function(now,fx){$(this).css('-webkit-transform',rotate('+now+deg)'))});
+        $('.brand-title').animate(function (now, fx) { $(this).css('-webkit-transform', rotate('+now+deg)')) });
         $('.sidebar').animate({ backgroundColor: sortedColors[5].color }, 300);
         $('.sidebar').animate({ color: sortedColors[1].color }, 300);
         $('.brand-tagline').css('color', sortedColors[9].color);
@@ -62,7 +66,7 @@ let applyColorPallet = function () {
         $('.color-button').css('color', sortedColors[4].color);
         $('.example-buttons').css('background-color', sortedColors[7].color);
         $('.example-buttons').css('color', sortedColors[3].color);
-        $('#directions').css('color', sortedColors[5].color);
+        $('#directions').css('color', sortedColors[6].color);
         $('#example-buttons').css('color', sortedColors[5].color);
         $("input").css('background-color', sortedColors[0].color);
         $("input").css('color', sortedColors[2].color);
