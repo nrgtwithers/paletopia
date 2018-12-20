@@ -19,7 +19,7 @@ let applyColorPallet = function () {
         }
 
         //make button for displaying info on pallete for each color
-        let displayInfoButton = $('<button>').text("click to display palette info").addClass('color-button pure-u-5-5').css('min-height', '64px');
+        let displayInfoButton = $('<button>').text("click to display palette info").addClass('color-button pure-u-5-5').css('min-height', '64px').attr('id','displayInfoButton');
 
         displayInfoButton.on("click", () => {
             displayPaletteInfo()
@@ -91,5 +91,6 @@ let applyColorPallet = function () {
 
         //make border around palette
         $(".palette").css('border-style', 'solid').css('border-color', sortedColors[2].color).css('border-width', 'thick')
+        $(".palette").css('background-color', sortedColors[3].color)
     })
 }
