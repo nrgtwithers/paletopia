@@ -73,7 +73,14 @@ let applyColorPallet = function () {
             }, function(){
             $(this).css("background-color", sortedColors[7].color);
           });
+          $(".color-button").hover(function(){
+            $(this).css("background-color", sortedColors[6].color);
+            }, function(){
+            $(this).css("background-color", sortedColors[8].color);
+          });
           $("#display").addClass('animated 3s fadeIn');
+          
+        
         //animating background colors
         $("html").animate();
         $("html").animate({ backgroundColor: sortedColors[0].color }, 300);
