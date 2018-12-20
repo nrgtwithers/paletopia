@@ -31,8 +31,7 @@ let applyColorPallet = function () {
             return b.brightness - a.brightness;
         })
 
-        //make border around palette
-        $(".palette").css('border-style', 'solid').css('border-color', sortedColors[2].color)
+
 
         localStorage.setItem(`currentColorLight`, sortedColors[0].color)
         localStorage.setItem(`currentColorDark`, sortedColors[9].color)
@@ -72,21 +71,24 @@ let applyColorPallet = function () {
         $("input").css('color', sortedColors[2].color);
         $("a").css('color', sortedColors[7].color);
         $("i").css('color', sortedColors[0].color);
-        $(".xyz").hover(function(){
-            $(this).css("background-color", sortedColors[6].color).css("color",sortedColors[2].color);
-            }, function(){
-            $(this).css("background-color", sortedColors[7].color).css("color",sortedColors[3].color);
-          });
-          $(".color-button").hover(function(){
+        $(".xyz").hover(function () {
+            $(this).css("background-color", sortedColors[6].color).css("color", sortedColors[2].color);
+        }, function () {
+            $(this).css("background-color", sortedColors[7].color).css("color", sortedColors[3].color);
+        });
+        $(".color-button").hover(function () {
             $(this).css("background-color", sortedColors[6].color);
-            }, function(){
+        }, function () {
             $(this).css("background-color", sortedColors[8].color);
-          });
-          $("#display").addClass('animated 3s fadeIn');
-          
-        
+        });
+        $("#display").addClass('animated 3s fadeIn');
+
+
         //animating background colors
         $("html").animate();
         $("html").animate({ backgroundColor: sortedColors[0].color }, 300);
+
+        //make border around palette
+        $(".palette").css('border-style', 'solid').css('border-color', sortedColors[2].color).css('border-width', 'thick')
     })
 }
