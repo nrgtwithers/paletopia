@@ -48,8 +48,9 @@ exampleUrlsArr = [
 $("#example-buttons").append($("<p>").text("Or try one of these."))
 
 exampleUrlsArr.forEach((urlname) => {
-    let button = $("<button>").addClass('pure-u-1-5').text(urlname.name)
+    let button = $("<button>").addClass('xyz pure-u-1-5').text(urlname.name)
     button.on("click", () => {
+        $("#display").removeClass('animated forwards fadeIn');
         event.preventDefault()
         localStorage.setItem("currentUrl", urlname.url)
         getColors(urlname.url)

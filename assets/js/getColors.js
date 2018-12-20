@@ -31,7 +31,7 @@ var getColors = (url) => {
         //empty display used to show colors
         $("#display").empty()
         $("#color-info").empty()
-        $("#display").addClass('animated 3s fadeIn');
+        $("#display").addClass('animated forwards fadeIn');
         //iterating over array of colors colorsArray
         for (i = 0; i < colorsArray.length; i++) {
             let color = colorsArray[i].color
