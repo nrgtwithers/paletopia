@@ -10,7 +10,8 @@ var getColors = (url) => {
     //appending request image to display div
     var img = $("<img>").attr("src", url).css("max-width", "100%").css("border-radius", "10px");
     $("#current-image").append(img);
-    $("#display").append($("<h1>")).text("loading...");
+    $("#display").append($("<h1>")).text("sploading...");
+    $("#display").append($("<img>")).attr('src','http://www.broadwaybalancesamerica.com/images/ajax-loader.gif')
     $("img").addClass('animated 5s fadeIn');
 
     //api request to google vision. This returns the response as visionResponse
