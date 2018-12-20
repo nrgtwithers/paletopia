@@ -68,8 +68,12 @@ let applyColorPallet = function () {
         $("input").css('color', sortedColors[2].color);
         $("a").css('color', sortedColors[7].color);
         $("i").css('color', sortedColors[0].color);
-    
-
+        $(".xyz").hover(function(){
+            $(this).css("background-color", sortedColors[0].color);
+            }, function(){
+            $(this).css("background-color", sortedColors[7].color);
+          });
+          $("#display").addClass('animated 3s fadeIn');
         //animating background colors
         $("html").animate();
         $("html").animate({ backgroundColor: sortedColors[0].color }, 300);
