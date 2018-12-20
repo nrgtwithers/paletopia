@@ -29,7 +29,7 @@ html, body {
     justify-content: center;
     height: 100%;
     width: 100%;
-    animation: transition 5s forwards;
+    animation: transition 2s forwards;
     margin-top: 0px;
     margin:0; /*gets rid of white space around body*/
     /* margin-top:16px; */
@@ -56,8 +56,15 @@ html, body {
   }  
 /*Animate.css*/
 #directions {
-    font-size: 15px;
-    animation: bounce 3s forwards;
+    font-size: 18px;
+    font-weight: bold;
+    animation-delay: 3s;
+    animation: fadeIn 3s forwards;
+}
+
+#userInput{
+    animation-delay: 6s;
+    animation: fadeIn 3s forwards;
 }
 
 /* LAYOUT CSS */
@@ -200,6 +207,8 @@ button{
     margin-left: 10px;
     background-color: #90AFC5;
     color: #2A3132;
+    animation-delay: 3s;
+    animation: fadeIn 2s forwards;
 }
 
 button:hover {
@@ -208,6 +217,11 @@ button:hover {
     transition: all 0.4s ease 0s;
   }
 
+#try{
+    font-weight: bold;
+    font-size: 18px;
+    animation: fadeIn 4s forwards;
+}
  /* p{
     color:#763626;;
 }  */

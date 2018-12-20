@@ -44,10 +44,10 @@ exampleUrlsArr = [
     // }
 ]
 
-$("#example-buttons").append($("<p>").text("Or try one of these."))
+$("#example-buttons").append($("<p id='try'>").text("Or try one of these."))
 
 exampleUrlsArr.forEach((urlname) => {
-    let button = $("<button>").addClass('xyz pure-u-1-5').text(urlname.name)
+    let button = $("<button>").addClass('xyz pure-u-1-5').text(urlname.name).css("animation", "fadeIn 3s forwards");
     button.on("click", () => {
         $("#display").removeClass('animated forwards fadeIn');
         event.preventDefault()
