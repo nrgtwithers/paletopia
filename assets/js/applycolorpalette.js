@@ -18,6 +18,10 @@ let applyColorPallet = function () {
             colorsBrightnessArray.push(newObj)
         }
 
+        //make border around pallete
+
+
+        //make button for displaying info on pallete for each color
         let displayInfoButton = $('<button>').text("click to display palette info").addClass('color-button').attr('width','100%'    )
 
         displayInfoButton.on("click", () => {
@@ -62,7 +66,7 @@ let applyColorPallet = function () {
         $('.color-button').css('color', sortedColors[4].color);
         $('.example-buttons').css('background-color', sortedColors[7].color);
         $('.example-buttons').css('color', sortedColors[3].color);
-        $('#directions').css('color', sortedColors[5].color);
+        $('#directions').css('color', sortedColors[6].color);
         $('#example-buttons').css('color', sortedColors[5].color);
         $("input").css('background-color', sortedColors[0].color);
         $("input").css('color', sortedColors[2].color);
