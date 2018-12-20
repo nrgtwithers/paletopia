@@ -306,6 +306,13 @@ button:hover {
     width: 90px;
     height: 35px;
     font-size: 15px}
+/* 
+#displayInfoButton{
+    background-image: linear-gradient(to bottom right, red, yellow, blue);
+} */
+
+
+
 
 /* opening animation  */
 .ani1 .ani2 .ani3 .ani4 {

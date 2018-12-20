@@ -19,20 +19,24 @@ let applyColorPallet = function () {
         }
 
         //make button for displaying info on pallete for each color
-        let displayInfoButton = $('<button>').text("click to display palette info").addClass('color-button pure-u-5-5').css('min-height', '64px').attr('id','displayInfoButton');
+        let displayInfoButton = $('<button>').text("click to display palette info").addClass('pure-u-5-5').css('min-height', '64px').attr('id', 'displayInfoButton');
 
+        
         displayInfoButton.on("click", () => {
             displayPaletteInfo()
         })
-
+        
         $("#display").prepend(displayInfoButton)
-
+        
         let sortedColors = colorsBrightnessArray.sort(function (a, b) {
             return b.brightness - a.brightness;
         })
-
-
-
+        
+        
+        //    displayInfoButton.css( "background-image", "linear-gradient(to bottom 6, 3, 9)")
+            displayInfoButton.css("background-image", `linear-gradient(to bottom right, ${sortedColors[6].color}, ${sortedColors[3].color}, ${sortedColors[9].color}`)
+   
+        
         localStorage.setItem(`currentColorLight`, sortedColors[0].color)
         localStorage.setItem(`currentColorDark`, sortedColors[9].color)
 
