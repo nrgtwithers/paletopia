@@ -13,9 +13,7 @@ This is the first project for the November 2018 - February 2019 George Washingto
 
 ## Issues
 
-[ ] make the front page look better  
-
-
+[ ] make the front page look better
 
 ## Development Log
 

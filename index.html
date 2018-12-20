@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+    <meta name="description" content="Color all elements in this page using any image. A combination of jQuery and Google Vision">
     <title>Paletopia</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
@@ -19,13 +19,18 @@
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossorigin="anonymous">
+
+
+    <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
-      (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-4441256960462944",
-        enable_page_level_ads: true
-      });
-    </script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-4441256960462944",
+            enable_page_level_ads: true
+        });
+    </script>-->
 </head>
 
 <body id="body">
@@ -36,14 +41,28 @@
                 <div class="header">
                     <h1 class="brand-title">PALETOPIA</h1>
                     <h2 class="brand-tagline">Generate color palette from any image</h2>
-                    <p style="align-content: center">Style this page with colors from any image. Enter in an image url
+                    <p class="sidebarText" style="align-content: center">Color all elements in this page using any image. 
                         or try an example image to automatically generate a color palette and apply colors to every
                         element on this page.</p>
+                        <br>
+                        <p class="sidebarText" style="align-content: center">Made with jQuery and Google Vision</p>
                     <button id="saveButton" type="save" class="pure-button pure-button-active color-button">Save</button>
                     <button id="loadButton" type="save" class="pure-button pure-button-active color-button">Load</button>
                     <br>
                     <br>
-                    <a href="https://github.com/IanWalston/ImageAnalysis"> Project's Github</a>
+                    <p id="contact-us" style="align-content: center">Contact us if you want help implementing this affect on your website:</p>
+                    <a href="https://github.com/IanWalston/ImageAnalysis">
+                        <span style="font-size: 48px; color: white;">
+                        <i class="fab fa-github-square"></i>
+                    </span>
+                </a>
+
+                
+                <a href="mailto:ninarosewithers@email.com">
+                    <span style="font-size: 48px; color: white">
+                        <i class="far fa-envelope"></i>
+                    </span>
+                </a>
                 </div>
             </div>
 
@@ -51,7 +70,7 @@
                 <form class="pure-form">
                     <fieldset>
                         <span>
-                            <p id="directions" class="animated infinite bounce">
+                            <p id="directions">
                                 Paste in an image url to generate and apply a color palette.
                             </p>
                             <span>
@@ -92,4 +111,5 @@
     <script src="assets/js/displaypaletteinfo.js"></script>
 
 </body>
+
 </html>

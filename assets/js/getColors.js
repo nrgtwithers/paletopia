@@ -6,13 +6,10 @@ var getColors = (url) => {
     $("#display").empty()
 
 
-     // <span class="rounded-img" style="background: url(img/thumb1.jpg) no-repeat center center;">
-	// 	<img src="img/thumb1.jpg" style="opacity: 0;" /> 
-	//	</span>
 
     //appending request image to display div
-    var img = $("<img>").attr("src", url).css("max-width", "100%")
-    $("#current-image").append(img)
+    var img = $("<img>").attr("src", url).css("max-width", "100%").css("border-radius", "10px");
+    $("#current-image").append(img);
     $("#display").append($("<h1>")).text("loading...");
     $("img").addClass('animated 5s fadeIn');
 
@@ -34,7 +31,7 @@ console.log(visionResponse);
         //empty display used to show colors
         $("#display").empty()
         $("#color-info").empty()
-        $("#display").addClass('animated 3s fadeIn');
+        $("#display").addClass('animated forwards fadeIn');
         //iterating over array of colors colorsArray
         for (i = 0; i < colorsArray.length; i++) {
             let color = colorsArray[i].color
