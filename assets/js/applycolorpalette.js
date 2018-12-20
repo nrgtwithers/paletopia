@@ -10,7 +10,7 @@ let applyColorPallet = function () {
             newObj.color = localStorage.getItem(`currentColor${i}`)
 
             //displaying css formatted color in the color pallete to the right of image
-            let newDiv = ($("<div>").text(' ').css(`background-color`, newObj.color).css('min-height', '75px').attr('id', `colorDisplay${i}`))
+            let newDiv = ($("<div>").text(' ').css(`background-color`, newObj.color).css('min-height', '64px').attr('id', `colorDisplay${i}`))
 
             $("#display").append(newDiv)
 
@@ -24,7 +24,7 @@ let applyColorPallet = function () {
             displayPaletteInfo()
         })
 
-        $("#display").append(displayInfoButton)
+        $("#display").prepend(displayInfoButton)
 
         let sortedColors = colorsBrightnessArray.sort(function (a, b) {
             return b.brightness - a.brightness;
@@ -69,9 +69,9 @@ let applyColorPallet = function () {
         $("a").css('color', sortedColors[7].color);
         $("i").css('color', sortedColors[0].color);
         $(".xyz").hover(function(){
-            $(this).css("background-color", sortedColors[0].color);
+            $(this).css("background-color", sortedColors[6].color).css("color",sortedColors[2].color);
             }, function(){
-            $(this).css("background-color", sortedColors[7].color);
+            $(this).css("background-color", sortedColors[7].color).css("color",sortedColors[3].color);
           });
           $("#display").addClass('animated 3s fadeIn');
         //animating background colors

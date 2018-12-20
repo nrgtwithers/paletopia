@@ -13,8 +13,7 @@ This is the first project for the November 2018 - February 2019 George Washingto
 
 ## Issues
 
-[ ] make the front page look better  
-[ ] the invisable footer blocks the button
+[ ] make the front page look better
 
 ## Development Log
 
