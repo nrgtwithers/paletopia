@@ -30,11 +30,8 @@ let applyColorPallet = function () {
         
         let sortedColors = colorsBrightnessArray.sort(function (a, b) {
             return b.brightness - a.brightness;
-        })
-        
+        })       
 
-        
-        
         //    displayInfoButton.css( "background-image", "linear-gradient(to bottom 6, 3, 9)")
             displayInfoButton.css("background-image", `linear-gradient(to right, ${sortedColors[0].color}, ${sortedColors[1].color}, ${sortedColors[2].color}, ${sortedColors[3].color}, ${sortedColors[4].color}, ${sortedColors[5].color}, ${sortedColors[6].color}, ${sortedColors[7].color}, ${sortedColors[8].color}, ${sortedColors[9].color}`)
    

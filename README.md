@@ -13,7 +13,8 @@ This is the first project for the November 2018 - February 2019 George Washingto
 
 ## Issues
 
-[ ] make the front page look better
+[ ] load button displays images without rounded edges  
+[ ] safari on iphone 6s, the background stays white and does not change with the rest of the elemetns when applyColorPalette() s run  
 
 ## Development Log
 
@@ -44,3 +45,10 @@ Improved Layout. Assigned colors with regard to brightness so all generated styl
 
 Clicking on the palette now displays information about each color. 
 
+####Thursday, December 20th, 2018
+
+Polishing layout, testing, preparing for presentation tomorrow. 
+
+
+
+[Slides presentation](https://docs.google.com/presentation/d/1NzOWxt7JTk69BPBsMLMVIvJHuthzYDk18p8gLstWy8U/edit#slide=id.p)
