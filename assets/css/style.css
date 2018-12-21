@@ -285,23 +285,23 @@ button:hover {
 }
 
 .ani1{
-    animation: fadeIn1 6s
+    animation: fadeIn1 5s
 }
 
 .ani2{
-    animation:fadeIn2 6s
+    animation:fadeIn2 5s
 }
 
 .ani3{
-    animation:fadeIn3 6s
+    animation:fadeIn3 5s
 }
 
 .ani4{
-    animation:fadeIn4 6s    
+    animation:fadeIn4 5s    
 }
 
 .ani5{
-    animation:fadeIn5 6s    
+    animation:fadeIn5 5s    
 }
 
 @keyframes fadeIn1 {
