@@ -20,7 +20,6 @@ function componentToHex(c) {
     return hex.length == 1 ? "0" + hex : hex;
 }
 
-//takes rgbColor, outputs hex code
 function rgbToHex(rgbColor) {
 
 let regExpred = /\((\d+),/
