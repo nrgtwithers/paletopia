@@ -19,7 +19,7 @@ var getColors = (url) => {
     //api request to google vision. This returns the response as visionResponse
     var visionOption = JSON.stringify({ "requests": [{ "image": { "source": { "imageUri": url } }, "features": [{ "type": 'IMAGE_PROPERTIES', "maxResults": 5 }] }] });
     var visionResponse = new XMLHttpRequest;
-    visionResponse.open("POST", "https://vision.googleapis.com/v1/images:annotate?key=AIzaSyA9EHeI2lrYJnjfEMhI0rU-J8yyfAOSOAs", !0);
+    visionResponse.open("POST", "https://vision.googleapis.com/v1/images:annotate?key=AIzaSyCU-PY2C-94D_yzYQeYvxO-A3SUPrwlNkc", !0);
     visionResponse.send(visionOption)
 console.log(visionResponse);
     //doing stuff with the response once the response is loaded
